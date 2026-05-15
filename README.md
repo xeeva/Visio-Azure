@@ -183,7 +183,7 @@ Stencils are versioned by Microsoft icon-pack revision plus our own patch level.
 | Version | Released | Icons | Notable |
 | --- | --- | --- | --- |
 | **V-5.0** | 2026-05 | 1,259 | First release of the new pipeline. Cross-platform Python build (no Visio COM required). Working shape search. Drawing-resources companion. |
-| V-4.7 (legacy) | 2024-09 | 1,233 | Final PowerShell+COM build under the original [David-Summers/Azure-Design](https://github.com/David-Summers/Azure-Design) repo. |
+| V-4.7 (legacy) | 2024-09 | 1,233 | Final PowerShell + Visio-COM build of the original Azure-Design stencil set. Archived; superseded by this project. |
 
 Each version stays available at `stencils/V-<x.y>/`. The newest release is also tagged as a [GitHub Release](https://github.com/xeeva/Visio-Azure/releases) with a single-zip download.
 
@@ -193,7 +193,7 @@ Each version stays available at `stencils/V-<x.y>/`. The newest release is also 
 
 ## Origin and Acknowledgements
 
-The original Azure-Design stencil set was created by [David Summers](https://github.com/David-Summers). This project is a ground-up rewrite of the build pipeline: cross-platform Python in place of PowerShell+COM, OOXML emitted directly so no Visio install is required at build time, and a comprehensive fix for the long-standing broken-search bug.
+This project is a ground-up rewrite of the original Azure-Design stencil pipeline: cross-platform Python in place of PowerShell + Visio COM, OOXML emitted directly so no Visio install is required at build time, and a comprehensive fix for the long-standing broken-search bug. The original stencil set has been archived in favour of this project.
 
 The source icons are Microsoft Azure service icons, distributed under the terms Microsoft publishes alongside them.
 

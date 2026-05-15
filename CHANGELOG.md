@@ -35,4 +35,4 @@ actual render output.
 
 ## [V-4.7] -- 2024-09
 
-Final release of the legacy PowerShell + Visio-COM pipeline. Maintained at [David-Summers/Azure-Design](https://github.com/David-Summers/Azure-Design). 1,233 icons, broken shape search, intermittent rendering issues on icons with translucent overlays or rotated primitives.
+Final release of the legacy PowerShell + Visio-COM pipeline. Archived; superseded by this project. 1,233 icons, broken shape search, intermittent rendering issues on icons with translucent overlays or rotated primitives.
