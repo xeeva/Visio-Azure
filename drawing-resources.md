@@ -48,6 +48,26 @@ The three colours in **bold** are new in V-5.0.
 | **Z_Colours-01** | Single reference master | Visio colour palette swatch for picking consistent fills |
 | **Z_Gradients-01** | Single reference master | Visio gradient palette swatch |
 
+### Azure-Arc style set (new in V-5.0)
+
+A coherent dark-theme palette reverse-engineered from the official Microsoft Azure Arc-enabled data services architecture diagram. Use to author diagrams that match the Microsoft Learn / Azure Docs visual language.
+
+| Master | Visual | Use |
+| --- | --- | --- |
+| **J_Arc-Container-Navy-01** | Navy `#152549` fill, cyan `#00d4ff` border, cyan glow halo | Dark-theme grouping container -- the "Azure", "Azure Stack HCI", ... cards in Microsoft Arc diagrams. |
+| **J_Arc-Container-Steel-01** | Slightly lighter `#1b3357` fill, brighter cyan border | Nested container inside a Container-Navy for visual hierarchy. |
+| **J_Arc-Scope-Red-01** | Red `#dc3545` dashed border, transparent fill | "This area is Azure Arc enabled" scope marker -- the red dashed rectangle in the source diagram. |
+| **J_Arc-Scope-Cyan-01** | Cyan `#00b8e6` dashed border, transparent fill | Generic logical-grouping scope marker. |
+| **J_Arc-Connector-CyanGlow-01** | White line with cyan glow halo | Connector lines between dark containers -- pops visually against navy backgrounds. |
+| **J_Arc-Connector-CyanThin-01** | Thin solid cyan line, no glow | Minimal connector for high-density node graphs. |
+| **J_Arc-PlatformBar-Azure-01** | Solid Microsoft blue `#0078D4` | Bottom-row platform banner -- "Azure" footer. |
+| **J_Arc-PlatformBar-AWS-01** | Solid Amazon orange `#FF9900` | "Amazon Web Services" footer. |
+| **J_Arc-PlatformBar-GCP-01** | Solid Google blue `#4285F4` | "Google Cloud Platform" footer. |
+| **J_Arc-PlatformBar-VMware-01** | Solid VMware grey-blue `#607078` | "VMware vSphere" footer. |
+| **J_Arc-PlatformBar-Dark-01** | Solid navy `#152549` with cyan border | Generic dark-theme banner / header strip. |
+
+**Composing a diagram in this style:** drop platform bars across the bottom, stack Container-Navy or -Steel boxes for the service groups, connect them with Connector-CyanGlow lines, and use a Scope-Red rectangle to mark the Arc-enabled region.
+
 ## Using the connector arrows
 
 The new **I_Arrow** masters are 1-D connector shapes -- you drop one onto the canvas, grab its endpoints, and drag them onto the connection points of two icons. The line bridges the icons; the filled-triangle arrowhead sits at the End anchor.
