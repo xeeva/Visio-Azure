@@ -1,0 +1,474 @@
+---
+---
+
+@import "jekyll-theme-cayman";
+
+/* ============================================
+   GENESIS DARK THEME
+   Vivid colours on deep dark backgrounds
+   ============================================ */
+
+:root {
+  --g-bg-primary: #0d1117;
+  --g-bg-secondary: #161b22;
+  --g-bg-tertiary: #1c2128;
+  --g-border: #30363d;
+  --g-text-primary: #e6edf3;
+  --g-text-secondary: #8b949e;
+  --g-text-muted: #6e7681;
+  --g-accent-blue: #58a6ff;
+  --g-accent-purple: #bc8cff;
+  --g-accent-green: #3fb950;
+  --g-accent-orange: #f0883e;
+  --g-accent-red: #ff7b72;
+  --g-accent-cyan: #39d2c0;
+  --g-accent-pink: #f778ba;
+  --g-gradient-start: #6e40c9;
+  --g-gradient-mid: #238636;
+  --g-gradient-end: #1f6feb;
+  --g-code-bg: #1c2128;
+  --g-sidebar-width: 220px;
+}
+
+/* Page background */
+body {
+  background-color: var(--g-bg-primary) !important;
+  color: var(--g-text-primary) !important;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+
+.page-header {
+  background-image: linear-gradient(135deg, #6e40c9 0%, #9b4dca 30%, #d94a1a 70%, #f0883e 100%) !important;
+  padding: 1.5rem 1rem !important;
+}
+
+.page-header h1.project-name {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+  font-size: 2.2rem !important;
+  letter-spacing: 0.05em !important;
+  margin-bottom: 0.2rem !important;
+}
+
+.page-header h2.project-tagline {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 400 !important;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2) !important;
+  font-size: 1rem !important;
+  margin-bottom: 0.8rem !important;
+}
+
+.page-header .btn {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  transition: all 0.2s ease !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 0.85rem !important;
+}
+
+.page-header .btn:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: #ffffff !important;
+}
+
+/* ============================================
+   SIDEBAR + CONTENT LAYOUT
+   ============================================ */
+
+.docs-wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 200px);
+}
+
+/* Sidebar */
+.docs-sidebar {
+  width: var(--g-sidebar-width);
+  min-width: var(--g-sidebar-width);
+  flex-shrink: 0;
+  border-right: 1px solid var(--g-border);
+}
+
+.sidebar-inner {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 1.5rem 0 2rem 1rem;
+  overflow-y: auto;
+  background-color: var(--g-bg-primary);
+}
+
+.sidebar-section {
+  margin-bottom: 1.2rem;
+}
+
+.sidebar-heading {
+  color: var(--g-text-muted);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.6rem;
+  margin-bottom: 0.15rem;
+}
+
+.sidebar-link {
+  display: block;
+  color: var(--g-text-secondary) !important;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  text-decoration: none !important;
+  transition: all 0.15s ease;
+  line-height: 1.4;
+}
+
+.sidebar-link:hover {
+  color: var(--g-text-primary) !important;
+  background-color: var(--g-bg-secondary);
+}
+
+.sidebar-link.active {
+  color: var(--g-accent-blue) !important;
+  background-color: rgba(88, 166, 255, 0.1);
+  font-weight: 500;
+}
+
+.sidebar-link.external::after {
+  content: " \2197";
+  font-size: 0.7em;
+  opacity: 0.5;
+}
+
+/* Sidebar scrollbar */
+.sidebar-inner::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-inner::-webkit-scrollbar-thumb {
+  background: var(--g-border);
+  border-radius: 2px;
+}
+
+/* ============================================
+   MAIN CONTENT
+   ============================================ */
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  background-color: var(--g-bg-primary) !important;
+  color: var(--g-text-primary) !important;
+  padding: 2rem 2.5rem !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+/* Headings */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: var(--g-text-primary) !important;
+}
+
+.main-content h1 {
+  color: var(--g-accent-purple) !important;
+  border-bottom: 2px solid var(--g-border) !important;
+  font-size: 1.8rem !important;
+}
+
+.main-content h2 {
+  color: var(--g-accent-blue) !important;
+  border-bottom: 1px solid var(--g-border) !important;
+  padding-bottom: 0.3em !important;
+  font-size: 1.4rem !important;
+}
+
+.main-content h3 {
+  color: var(--g-accent-cyan) !important;
+  font-size: 1.15rem !important;
+}
+
+/* Paragraphs and text */
+.main-content p,
+.main-content li {
+  color: var(--g-text-primary) !important;
+}
+
+/* Links */
+.main-content a {
+  color: var(--g-accent-blue) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+.main-content a:hover {
+  color: var(--g-accent-purple) !important;
+  text-decoration: underline !important;
+}
+
+/* ============================================
+   CODE BLOCKS (fixed corners)
+   ============================================ */
+
+.main-content code {
+  background-color: var(--g-code-bg) !important;
+  color: var(--g-accent-orange) !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 0.15em 0.4em !important;
+  font-size: 0.88em !important;
+}
+
+.main-content pre {
+  background-color: var(--g-bg-secondary) !important;
+  border: 1px solid var(--g-border) !important;
+  border-radius: 0 !important;
+  padding: 1rem !important;
+  overflow-x: auto !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.main-content pre code {
+  color: var(--g-text-primary) !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-size: 0.85rem !important;
+}
+
+/* ============================================
+   TABLES (fixed borders and corners)
+   ============================================ */
+
+.main-content table {
+  background-color: var(--g-bg-secondary) !important;
+  border: 1px solid var(--g-border) !important;
+  border-radius: 0 !important;
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  width: 100% !important;
+  margin: 1rem 0 !important;
+  display: table !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.main-content table th {
+  background-color: var(--g-bg-tertiary) !important;
+  color: var(--g-accent-cyan) !important;
+  border: 1px solid var(--g-border) !important;
+  font-weight: 600 !important;
+  padding: 0.6rem 0.8rem !important;
+  font-size: 0.85rem !important;
+  text-align: left !important;
+}
+
+.main-content table td {
+  color: var(--g-text-primary) !important;
+  border: 1px solid var(--g-border) !important;
+  padding: 0.5rem 0.8rem !important;
+  font-size: 0.85rem !important;
+}
+
+.main-content table tr:hover td {
+  background-color: rgba(88, 166, 255, 0.04) !important;
+}
+
+/* Kill all inherited table radius and backgrounds */
+.main-content table th:first-child,
+.main-content table th:last-child,
+.main-content table td:first-child,
+.main-content table td:last-child,
+.main-content table tr:first-child th,
+.main-content table tr:first-child td,
+.main-content table tr:last-child th,
+.main-content table tr:last-child td {
+  border-radius: 0 !important;
+  background-clip: padding-box !important;
+}
+
+/* Inline code inside tables */
+.main-content table code {
+  font-size: 0.82rem !important;
+  padding: 0.1em 0.3em !important;
+  white-space: nowrap !important;
+}
+
+/* Two-column tables: first column gets enough room for code */
+.main-content table th:first-child,
+.main-content table td:first-child {
+  width: 40% !important;
+  min-width: 180px !important;
+}
+
+/* ============================================
+   BLOCKQUOTES
+   ============================================ */
+
+.main-content blockquote {
+  border-left: 3px solid var(--g-accent-purple) !important;
+  background-color: var(--g-bg-secondary) !important;
+  color: var(--g-text-secondary) !important;
+  padding: 0.8rem 1.2rem !important;
+  border-radius: 0 !important;
+  margin: 1rem 0 !important;
+}
+
+.main-content blockquote p {
+  color: var(--g-text-secondary) !important;
+}
+
+/* ============================================
+   HORIZONTAL RULES
+   ============================================ */
+
+.main-content hr {
+  border: none !important;
+  height: 1px !important;
+  background: var(--g-border) !important;
+  margin: 2rem 0 !important;
+}
+
+/* ============================================
+   LISTS AND MISC
+   ============================================ */
+
+.main-content strong {
+  color: var(--g-text-primary) !important;
+  font-weight: 600 !important;
+}
+
+.main-content ul,
+.main-content ol {
+  color: var(--g-text-primary) !important;
+}
+
+.main-content li::marker {
+  color: var(--g-accent-blue) !important;
+}
+
+/* ============================================
+   IMAGES
+   ============================================ */
+
+.main-content img {
+  border-radius: 6px !important;
+  border: 1px solid var(--g-border) !important;
+  margin: 1.5rem 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  box-shadow: none !important;
+}
+
+.main-content img[src$=".svg"] {
+  background-color: transparent !important;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.site-footer {
+  background-color: var(--g-bg-primary) !important;
+  border-top: 1px solid var(--g-border) !important;
+  color: var(--g-text-muted) !important;
+  padding: 1.5rem !important;
+  text-align: center !important;
+  max-width: none !important;
+}
+
+.site-footer a {
+  color: var(--g-accent-blue) !important;
+}
+
+.site-footer-credits {
+  color: var(--g-text-muted) !important;
+}
+
+/* ============================================
+   SELECTION AND SCROLLBAR
+   ============================================ */
+
+::selection {
+  background-color: rgba(110, 64, 201, 0.4) !important;
+  color: #ffffff !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--g-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--g-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--g-text-muted);
+}
+
+/* ============================================
+   RESPONSIVE: collapse sidebar on small screens
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+  .docs-wrapper {
+    flex-direction: column;
+  }
+
+  .docs-sidebar {
+    width: 100%;
+    min-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--g-border);
+  }
+
+  .sidebar-inner {
+    position: static;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 1rem;
+    border-right: none;
+    border-bottom: 1px solid var(--g-border);
+  }
+
+  .sidebar-section {
+    margin-bottom: 0.5rem;
+  }
+
+  .sidebar-heading {
+    display: none;
+  }
+
+  .sidebar-link {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .main-content {
+    padding: 1.5rem 1rem !important;
+    margin-left: 0 !important;
+  }
+}

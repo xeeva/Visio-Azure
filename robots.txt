@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xeeva.github.io/Visio-Azure/sitemap.xml
