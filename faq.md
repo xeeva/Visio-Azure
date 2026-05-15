@@ -11,9 +11,9 @@ title: FAQ
 
 No. Microsoft owns the **Azure service icons** themselves. This project is a community-built Visio stencil set wrapping those icons with the connection points, shape data, sizing, and search keywords that Microsoft's own publishing format (flat SVG) doesn't include. The icons are used with Microsoft's permission for community redistribution and are subject to Microsoft's usage terms (free for diagrams, attribution required for icon design).
 
-### How is this different from the legacy David-Summers/Azure-Design repo?
+### How is this different from the legacy Azure-Design stencils?
 
-Same lineage, same community, completely rewritten build pipeline. The legacy repo used PowerShell + Visio COM, which required a Windows-with-Visio install just to *build* the stencil and shipped with a long-standing broken-search bug. V-5.0 is cross-platform Python that emits the OOXML directly, ships with working search, and has comprehensively swept out the rendering bugs the legacy pipeline carried for years. See [Release Notes](releases) for the full list.
+Same lineage, same community, completely rewritten build pipeline. The legacy stencils were produced by a PowerShell + Visio COM, which required a Windows-with-Visio install just to *build* the stencil and shipped with a long-standing broken-search bug. V-5.0 is cross-platform Python that emits the OOXML directly, ships with working search, and has comprehensively swept out the rendering bugs the legacy pipeline carried for years. See [Release Notes](releases) for the full list.
 
 ### Why GPL-3 and not MIT?
 

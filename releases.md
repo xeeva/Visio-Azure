@@ -71,8 +71,8 @@ Three SVGs in the source corpus were skipped because they contain no renderable 
 
 ## V-4.7 -- 2024-09
 
-Final release of the legacy PowerShell + Visio-COM pipeline at [David-Summers/Azure-Design](https://github.com/David-Summers/Azure-Design). 1,233 icons. Broken shape search. Intermittent rendering issues on icons with translucent overlays, rotated primitives, or gradient fills. Preserved for download but no longer maintained.
+Final release of the legacy PowerShell + Visio-COM pipeline. 1,233 icons. Broken shape search. Intermittent rendering issues on icons with translucent overlays, rotated primitives, or gradient fills. Preserved for download but no longer maintained.
 
 ## Earlier versions
 
-Earlier releases are still available at the original repo: <https://github.com/David-Summers/Azure-Design/releases>.
+The pre-V-5.0 stencils were maintained at a now-archived repository. They are superseded by V-5.0.
