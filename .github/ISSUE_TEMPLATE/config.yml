@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Questions & ideas (Discussions)
+    url: https://github.com/xeeva/Visio-Azure/discussions
+    about: Ask how to use the stencils, propose ideas, or show off your diagrams.
+  - name: 📚 Documentation
+    url: https://xeeva.github.io/Visio-Azure
+    about: Setup guide, icon features, units (metric vs US), search, and FAQ.
+  - name: ❤️ Sponsor
+    url: https://github.com/sponsors/xeeva
+    about: Support maintenance and unlock the per-icon SVG / PNG asset library.

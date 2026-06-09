@@ -1,0 +1,22 @@
+title: "[Idea]: "
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea for the stencil set? Anything from a new feature to a workflow improvement.
+        (Requesting a specific missing icon? Use an **Icon request** issue instead -- it's easier to track.)
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What would you like to see?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it useful?
+      description: What problem does it solve, or how would you use it?
+    validations:
+      required: false

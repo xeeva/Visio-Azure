@@ -1,0 +1,30 @@
+title: "[Q&A]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Stuck on something? Ask away. Check the [docs](https://xeeva.github.io/Visio-Azure) first -- units, search, and setup are covered there.
+  - type: dropdown
+    id: units
+    attributes:
+      label: Which build are you using?
+      options:
+        - Metric (_m)
+        - US (_u)
+        - Not sure / N/A
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: input
+    id: visio
+    attributes:
+      label: Visio version (if relevant)
+      placeholder: e.g. Visio Plan 2, Windows 11
+    validations:
+      required: false

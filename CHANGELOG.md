@@ -2,6 +2,21 @@
 
 All notable changes to the Visio-Azure stencil set. Follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions are semantic-ish (`<major-icon-pack>.<release>`).
 
+## [V-5] -- 2026-06-09
+
+Repackaged and expanded release. Now ships in **both Metric and US measurement units** so the icons drop at the correct real-world size whatever your Visio drawing uses.
+
+### Added
+- **Dual-unit builds.** Every stencil is provided in a Metric (`_m`) and a US (`_u`) variant, organised into `M/` and `U/` folders, each with a one-click zip (`Visio-Azure-Stencils-Metric-V5.zip`, `Visio-Azure-Stencils-US-V5.zip`). The drawing-resources companion ships in both.
+- **27 dark-mode (`-DM`) variants.** Solid-black monochrome logos (Azure OpenAI, GitHub, Kafka, App Service / VM / SQL action glyphs, Resource Lock, BitLocker Key, …) now have a white-fill twin suffixed `-DM` so they stay visible on dark canvases. Detected automatically across the corpus; the white fill is real geometry, so it scales correctly in Visio.
+- **14 new API Management icons** (API Center, Workspace, MCP Server, Credential Manager, Backend, Named Value, Policy Fragment, Power Platform, Pricing Tier, Product, Schema, Location, …).
+- **Grid preview drawing** (`Azure_All-Icons-Preview_V-5.vsdx`) of every icon at true size.
+
+### Changed
+- **Consolidated API Management naming.** Removed duplicate `APIM …` icons in favour of the canonical `API Management …` names; refreshed the API Management Service icon to the newer brighter Azure styling.
+- **Rescaled custom Workload and Workload-Service icons** to ~85% fill so they sit at the same visual size as the Azure icons (previously ~32-44% fill, i.e. about a third the size).
+- **1,773 masters** across 17 groups.
+
 ## [V-5.0] -- 2026-05-16
 
 First release under the rewritten Python build pipeline. Carries every

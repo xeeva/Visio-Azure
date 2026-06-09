@@ -1,0 +1,62 @@
+name: "🐛 Bug report"
+description: Something looks wrong, renders badly, won't search, or scales oddly.
+title: "[Bug]: <short summary>"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for the report. A screenshot from Visio is worth a thousand words here.
+  - type: dropdown
+    id: area
+    attributes:
+      label: What's affected?
+      options:
+        - A specific icon looks wrong / broken
+        - Shape search doesn't find an icon
+        - Icon scales to the wrong size
+        - Connection points / text in the wrong place
+        - Dark-mode (-DM) variant issue
+        - Drawing-resources stencil
+        - Something else
+    validations:
+      required: true
+  - type: dropdown
+    id: units
+    attributes:
+      label: Which build are you using?
+      options:
+        - Metric (_m)
+        - US (_u)
+        - Both / not sure
+    validations:
+      required: true
+  - type: input
+    id: icon
+    attributes:
+      label: Icon / stencil name
+      placeholder: e.g. Azure_Compute_V-5_m.vssx -> "Virtual Machine"
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect, and what happened?
+      placeholder: |
+        Expected: ...
+        Actual: ...
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag an image in. A Visio screenshot showing the problem is ideal.
+    validations:
+      required: false
+  - type: input
+    id: visio
+    attributes:
+      label: Visio version
+      placeholder: e.g. Visio Plan 2 / 2021 / desktop, Windows 11
+    validations:
+      required: false

@@ -1,0 +1,69 @@
+name: "🎨 Icon request"
+description: Request a new Azure (or related) icon to be added to the stencil set.
+title: "[Icon request]: <service name>"
+labels: ["icon-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping grow the set! One service per request, please -- it keeps triage clean.
+        For a batch, open one request and list them in the details.
+  - type: input
+    id: service
+    attributes:
+      label: Service / item name
+      description: The exact name as Microsoft uses it, if you know it.
+      placeholder: e.g. Azure Container Storage
+    validations:
+      required: true
+  - type: dropdown
+    id: group
+    attributes:
+      label: Group
+      description: Which stencil group does this belong in?
+      options:
+        - AI
+        - Application
+        - Compute
+        - Data
+        - Deployment
+        - Dynamics 365
+        - Endpoint
+        - Generic
+        - Identity
+        - IoT
+        - Management
+        - Networking
+        - Office365
+        - Security
+        - Storage
+        - Workload
+        - Workload-Service
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source / reference
+      description: Link to the official icon or docs page, or attach the SVG if you have it. Official Microsoft artwork helps it land faster.
+      placeholder: https://learn.microsoft.com/azure/architecture/icons/
+    validations:
+      required: false
+  - type: dropdown
+    id: darkmode
+    attributes:
+      label: Needs a dark-mode (-DM) variant?
+      description: Only relevant if the icon is a solid black/monochrome logo.
+      options:
+        - "No / not sure"
+        - "Yes -- it's a black logo that disappears on dark canvases"
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+      placeholder: How you'd use it, related icons, etc.
+    validations:
+      required: false

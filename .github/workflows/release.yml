@@ -9,29 +9,19 @@ permissions:
   contents: write
 
 jobs:
-  bundle:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Resolve version from tag
-        id: ver
-        run: echo "version=${GITHUB_REF_NAME#V-}" >> "$GITHUB_OUTPUT"
-
-      - name: Bundle release ZIP
+      - name: Checksums for the unit zips
         run: |
           set -euo pipefail
-          version="${{ steps.ver.outputs.version }}"
-          src="stencils/V-${version}"
-          if [ ! -d "$src" ]; then
-            echo "::error::expected $src to exist for tag ${GITHUB_REF_NAME}"
-            exit 1
-          fi
-          zip_name="Visio-Azure_V-${version}.zip"
-          (cd "$src" && zip -r "../../$zip_name" .)
-          echo "ZIP=$zip_name" >> "$GITHUB_ENV"
-          sha256sum "$zip_name" > "$zip_name.sha256"
-          ls -la "$zip_name" "$zip_name.sha256"
+          shopt -s nullglob
+          for z in Visio-Azure-Stencils-*.zip; do
+            sha256sum "$z" > "$z.sha256"
+          done
+          ls -la Visio-Azure-Stencils-*.zip*
 
       - name: Create release
         uses: softprops/action-gh-release@v2
@@ -39,9 +29,11 @@ jobs:
           tag_name: ${{ github.ref_name }}
           name: ${{ github.ref_name }}
           body_path: CHANGELOG.md
-          files: |
-            ${{ env.ZIP }}
-            ${{ env.ZIP }}.sha256
-            stencils/V-${{ steps.ver.outputs.version }}/Azure_All-Icons_V-${{ steps.ver.outputs.version }}.vssx
-            stencils/V-${{ steps.ver.outputs.version }}/Azure_Drawing-Resources_V-${{ steps.ver.outputs.version }}.vssx
           generate_release_notes: false
+          files: |
+            Visio-Azure-Stencils-Metric-*.zip
+            Visio-Azure-Stencils-US-*.zip
+            Visio-Azure-Stencils-*.zip.sha256
+            M/Azure_All-Icons_*_m.vssx
+            U/Azure_All-Icons_*_u.vssx
+            M/Azure_Drawing-Resources_*.vssx
