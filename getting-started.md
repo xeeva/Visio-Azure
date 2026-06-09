@@ -17,8 +17,8 @@ A step-by-step walk-through from download to first diagram.
 
 Visio-Azure ships in two identical sets that differ only in measurement units. **Choose one before downloading:**
 
-- **Metric** (`_m`, the `M/` folder) -- if your Visio drawings use centimetres / millimetres.
-- **US** (`_u`, the `U/` folder) -- if they use inches / feet.
+- **Metric** (`_m`, the `Stencil-Metric/` folder) -- if your Visio drawings use centimetres / millimetres.
+- **US** (`_u`, the `Stencil-US/` folder) -- if they use inches / feet.
 
 Not sure? **Design → Page Setup → Measurement units** in Visio. [Full explanation →](units)
 
@@ -35,16 +35,16 @@ A single zip of every stencil -- all 17 groups, the all-icons stencil, and the d
 
 One file, every icon:
 
-- Metric: [`M/Azure_All-Icons_V-5_m.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/M/Azure_All-Icons_V-5_m.vssx)
-- US: [`U/Azure_All-Icons_V-5_u.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/U/Azure_All-Icons_V-5_u.vssx)
+- Metric: [`M/Azure_All-Icons_V-5_m.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_All-Icons_V-5_m.vssx)
+- US: [`U/Azure_All-Icons_V-5_u.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_All-Icons_V-5_u.vssx)
 
 ### A specific category
 
-If you only design for one part of Azure, grab just that group from the [`M/`](https://github.com/xeeva/Visio-Azure/tree/main/M) (metric) or [`U/`](https://github.com/xeeva/Visio-Azure/tree/main/U) (US) folder. Each holds all 17 group stencils:
+If you only design for one part of Azure, grab just that group from the [`Stencil-Metric/`](https://github.com/xeeva/Visio-Azure/tree/main/Stencil-Metric) (metric) or [`Stencil-US/`](https://github.com/xeeva/Visio-Azure/tree/main/Stencil-US) (US) folder. Each holds all 17 group stencils:
 
 `AI · Application · Compute · Data · Deployment · Dynamics 365 · Endpoint · Generic · Identity · IoT · Management · Networking · Office365 · Security · Storage · Workload · Workload-Service`
 
-The drawing-resources companion (`Azure_Drawing-Resources_V-5.vssx`) is in both folders. A grid preview of every icon at true size is in [`Azure_All-Icons-Preview_V-5.vsdx`](https://github.com/xeeva/Visio-Azure/raw/main/Azure_All-Icons-Preview_V-5.vsdx).
+The drawing-resources companion (`Azure_Drawing-Resources_V-5.vssx`) is in both folders.
 
 ## 3. Install
 

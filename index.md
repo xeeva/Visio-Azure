@@ -43,7 +43,7 @@ Only the internal units differ -- the artwork, connection points, shape data, an
 
 ## Quick Start
 
-1. Download the **Metric** or **US** zip above (or just the [All-Icons stencil](https://github.com/xeeva/Visio-Azure/raw/main/M/Azure_All-Icons_V-5_m.vssx) for metric / [US](https://github.com/xeeva/Visio-Azure/raw/main/U/Azure_All-Icons_V-5_u.vssx)).
+1. Download the **Metric** or **US** zip above (or just the [All-Icons stencil](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_All-Icons_V-5_m.vssx) for metric / [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_All-Icons_V-5_u.vssx)).
 2. Double-click a `.vssx`. Visio opens it in the **Shapes** panel.
 3. Drag an icon onto the canvas; hover near an edge to find a connection point; draw a connector to another icon's anchor.
 4. Type a service name into the search box at the top of the Shapes panel -- the broken-search fix means it actually finds something.
@@ -51,32 +51,27 @@ Only the internal units differ -- the artwork, connection points, shape data, an
 
 The [full setup guide](getting-started) covers Visio versions, importing the stencil into a custom My Shapes location, and how to turn on Visio's shape search if it isn't already.
 
-## What's New in V-5
+## Built by a generation pipeline, not by hand
 
-- **Metric *and* US-unit builds.** Pick the set that matches your drawing. [Why two?](units)
-- **27 dark-mode `-DM` variants.** Solid-black logos (OpenAI, GitHub, Kafka, action glyphs, …) get a white-fill twin that stays visible on dark backgrounds.
-- **Expanded API Management coverage** and consolidated naming (no more duplicate `APIM …` vs `API Management …`).
-- **Rescaled custom Workload icons** so on-prem / IaaS shapes sit at the same visual size as the Azure icons.
-- Plus the full V-5.0 rendering-correctness sweep below.
+The whole set is **generated programmatically** -- scan → normalise → scale → emit OOXML → verify -- with every connection point, shape-data field, caption rule, search keyword, and unit variant applied automatically to all 1,773 masters and machine-checked against a per-master contract before it ships.
 
-### Carried over from the V-5.0 pipeline rewrite
+That's a step change from the earlier **PowerShell + Visio-COM** approach, which was Windows-only, drove a live Visio instance one shape at a time, and fixed broken icons by hand. The pipeline now handles the hard parts itself:
 
-- **Shape search works.** Keywords written in every cell Visio indexes.
-- **Uniform sizing.** Icons whose painted content fills only a fraction of the declared viewBox no longer render as tiny dots.
-- **Gradients render as gradients.** A missing `FillPattern=25` cell meant the legacy stencils rendered every gradient as a solid first-stop colour.
-- **Translucent overlays work.** Reads `opacity` / `fill-opacity` from attributes, inline style, and embedded CSS classes.
-- **Rotated primitives stay rotated.** `<rect transform="rotate(...)">` no longer renders axis-aligned.
-- **Masked icons render correctly.** The seven Dynamics 365 Mixed Reality icons are no longer black silhouettes.
-- **3-digit hex (`#fff`) expanded to 6-digit** so white screens stop rendering as black rectangles.
-- **421 icons' gradient direction** corrected -- `gradientTransform` is now honoured.
+- **Shape search works** -- keywords written into every cell Visio indexes.
+- **Uniform sizing** -- artwork fills its frame; padded source viewBoxes are tightened so nothing renders as a tiny dot.
+- **Gradients, translucency, rotated primitives, masks, and `#fff` overlays** all render correctly, automatically.
+- **Dark-mode `-DM` twins** generated for every all-black logo.
+- **Cross-platform and deterministic** -- no Visio needed to build, and identical input produces byte-identical `.vssx`, so the set regenerates in seconds whenever the icons change.
 
-The [release notes](releases) cover every fix.
+The [release notes](releases) cover the full V-5 feature list.
 
-## Get the Asset Files
+## Get the asset files and styled variants
 
-The `.vssx` stencils in this repo are free and GPL-licensed -- download as many as you want. The per-icon SVG and PNG files, however, are sponsor-only. The previous Azure-Design repo distributed them freely and they were systematically re-hosted by other parties with attribution stripped. Moving the raw asset files behind a sponsor tier is what keeps this work maintained.
+The `.vssx` stencils here are **free and GPL-licensed** -- download as many as you like. The **per-icon SVG and PNG files, and styled visual variants**, are part of **Premium** *(in build)*.
 
-See [Sponsorship](sponsorship) for tiers, what each gets you, and how access is delivered.
+This split is deliberate. When the raw, easily-repackaged asset files were distributed freely, they were re-hosted and resold with the licence and attribution stripped -- so the functional stencils stay open and free, while the raw assets and styles are Premium. That's what keeps the project funded and maintained.
+
+See [Premium & sponsorship](sponsorship) for what's included and how access is delivered.
 
 ## Found a problem, or want an icon?
 

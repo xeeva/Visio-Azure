@@ -22,7 +22,7 @@ Every master in Visio-Azure carries the service name, group, and a handful of us
 | Document-level `<Keywords>` in `docProps/app.xml` | All masters' keywords joined | Stencil-wide search |
 | `<dc:subject>` in `docProps/core.xml` | Same as above | Backup index |
 
-The legacy Azure-Design stencils (now archived) wrote keywords into only one of these (the PageSheet `ShapeKeywords` cell), which is **not** what Visio's shape search reads on modern Visio versions. Visio-Azure writes to all six.
+A common mistake is to write keywords into only one of these -- the PageSheet `ShapeKeywords` cell -- which is **not** what Visio's shape search reads on modern Visio versions. Visio-Azure writes to all six.
 
 ## Verifying it works on your machine
 
@@ -65,9 +65,9 @@ Visio caches its keyword index for performance. If you've just installed a fresh
 
 On Windows you can also force a full reindex by deleting `%USERPROFILE%\AppData\Roaming\Microsoft\Visio\ShapeSearch.idx` and restarting Visio.
 
-## Why the legacy stencils' search "worked but didn't"
+## Why keywords have to go in more than one place
 
-The original PowerShell + Visio-COM pipeline set `Shapekeywords` on the **PageSheet** of each master. The PageSheet is the per-master settings sheet that holds size, fill style, layer membership, and miscellaneous cells. It looked like the right place to put keywords -- but Visio's shape-search indexer reads the `Prompt` attribute on the master element itself and the `Description`, *not* an arbitrary cell inside the PageSheet. So the keywords were stored, but never queried.
+It's easy to set `ShapeKeywords` on the **PageSheet** of each master and assume search will find it. The PageSheet is the per-master settings sheet that holds size, fill style, layer membership, and miscellaneous cells -- it looks like the right place. But Visio's shape-search indexer reads the `Prompt` attribute on the master element itself and the `Description`, *not* an arbitrary cell inside the PageSheet. Keywords stored only there are never queried. (An earlier PowerShell + Visio-COM build made exactly this mistake.)
 
 Visio-Azure writes the same keyword string to every reasonable location. If a future Visio version changes which cell its indexer reads, search will still work because the data is in all of them.
 
@@ -87,7 +87,7 @@ Existing dropped icons retain their geometry; subsequent drops are sized in mm.
 
 ### Why it happens
 
-We don't have a confirmed root cause yet. The stencil's `PageScale` / `DrawingScale` cells are emitted with `V='0.03937007874015748' U='MM'` -- byte-for-byte identical to what Visio writes natively for a metric stencil and to what the legacy Azure-Design V-4.7 stencils used. Master attributes, keyword cells (`ShapeKeywords`, `Keywords`, `Prompt`, document-level `Keywords`), and PageSheet structure all match canonical Visio output.
+We don't have a confirmed root cause yet. The stencil's `PageScale` / `DrawingScale` cells are emitted with `V='0.03937007874015748' U='MM'` -- byte-for-byte identical to what Visio writes natively for a metric stencil. Master attributes, keyword cells (`ShapeKeywords`, `Keywords`, `Prompt`, document-level `Keywords`), and PageSheet structure all match canonical Visio output.
 
 This points at a Visio-side behaviour rather than a stencil bug, but we want to confirm before closing the investigation. If you can reproduce the issue, please add detail to the tracking issue at [github.com/xeeva/Visio-Azure/issues](https://github.com/xeeva/Visio-Azure/issues) including:
 

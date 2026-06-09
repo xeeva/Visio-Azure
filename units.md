@@ -7,7 +7,7 @@ title: Metric vs US Units
 
 Visio-Azure ships **two complete, identical icon sets**. They differ in exactly one thing: the internal **measurement unit** each stencil is authored in. Pick the one that matches the drawing you work in and everything drops at the right size, snaps to the grid, and reports sensible dimensions.
 
-> **TL;DR** — Work in **cm / mm**? Take **Metric** (`_m`, the `M/` folder). Work in **inches / feet**? Take **US** (`_u`, the `U/` folder). The artwork is the same either way.
+> **TL;DR** — Work in **cm / mm**? Take **Metric** (`_m`, the `Stencil-Metric/` folder). Work in **inches / feet**? Take **US** (`_u`, the `Stencil-US/` folder). The artwork is the same either way.
 
 ## Why are there two stencils?
 
@@ -20,8 +20,8 @@ Rather than force one world onto the other, we build each stencil twice:
 
 | Build | Suffix | Folder | Authored in | Page scale |
 | --- | --- | --- | --- | --- |
-| **Metric** | `_m` | `M/` | millimetres | metric (mm / cm) |
-| **US** | `_u` | `U/` | inches | US (in / ft) |
+| **Metric** | `_m` | `Stencil-Metric/` | millimetres | metric (mm / cm) |
+| **US** | `_u` | `Stencil-US/` | inches | US (in / ft) |
 
 Everything else — the artwork, the nine connection points, the seven Shape Data fields, the caption placement, and the search keywords — is **byte-for-byte the same intent** in both. Only the unit system and page scale change.
 
@@ -43,12 +43,12 @@ A quick rule of thumb: most of the world (Australia, Europe, UK, NZ, most of Asi
 ### 🌍 Metric (millimetres / centimetres)
 
 - **[Metric stencils — all groups (.zip)](https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-Metric-V5.zip)**
-- [All-Icons only](https://github.com/xeeva/Visio-Azure/raw/main/M/Azure_All-Icons_V-5_m.vssx) · [Drawing resources](https://github.com/xeeva/Visio-Azure/raw/main/M/Azure_Drawing-Resources_V-5.vssx) · [browse the `M/` folder](https://github.com/xeeva/Visio-Azure/tree/main/M)
+- [All-Icons only](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_All-Icons_V-5_m.vssx) · [Drawing resources](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Drawing-Resources_V-5.vssx) · [browse the `Stencil-Metric/` folder](https://github.com/xeeva/Visio-Azure/tree/main/Stencil-Metric)
 
 ### 🇺🇸 US (inches / feet)
 
 - **[US stencils — all groups (.zip)](https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-US-V5.zip)**
-- [All-Icons only](https://github.com/xeeva/Visio-Azure/raw/main/U/Azure_All-Icons_V-5_u.vssx) · [Drawing resources](https://github.com/xeeva/Visio-Azure/raw/main/U/Azure_Drawing-Resources_V-5.vssx) · [browse the `U/` folder](https://github.com/xeeva/Visio-Azure/tree/main/U)
+- [All-Icons only](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_All-Icons_V-5_u.vssx) · [Drawing resources](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Drawing-Resources_V-5.vssx) · [browse the `Stencil-US/` folder](https://github.com/xeeva/Visio-Azure/tree/main/Stencil-US)
 
 </div>
 
