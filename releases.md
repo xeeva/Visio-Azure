@@ -5,6 +5,27 @@ title: Release Notes
 
 # Release Notes
 
+## V-5 -- 2026-06-09
+
+Repackaged and expanded. The headline change is **dual-unit packaging**: every stencil now ships in a **Metric** (`_m`) and a **US** (`_u`) build so icons drop at the correct real-world size whatever your Visio drawing uses. See [Metric vs US units](units).
+
+### Added
+
+- **Metric and US builds.** Organised into `M/` and `U/` folders, each with a one-click zip (`Visio-Azure-Stencils-Metric-V5.zip`, `Visio-Azure-Stencils-US-V5.zip`) and the drawing-resources companion. Identical artwork, connection points, shape data, and search in both -- only the unit system differs.
+- **27 dark-mode (`-DM`) variants.** Every all-black monochrome logo (Azure OpenAI, GitHub, Kafka, App Service / VM / SQL action glyphs, Resource Lock, BitLocker Key, …) now has a white-fill twin suffixed `-DM`, detected automatically across the corpus. The recolour is real fill geometry, so it scales cleanly at any size. Use the original on light canvases, the `-DM` twin on dark. See [Icon Features](icon-features#dark-mode-dm-variants).
+- **14 new API Management icons** -- API Center, Workspace, MCP Server, Credential Manager, Backend, Named Value, Policy Fragment, Power Platform, Pricing Tier, Product, Schema, Location, and more.
+
+### Changed
+
+- **API Management naming consolidated.** Removed duplicate `APIM …` icons in favour of the canonical `API Management …` names, and refreshed the API Management Service icon to the newer brighter Azure styling.
+- **Custom Workload / Workload-Service icons rescaled.** These on-prem / IaaS shapes previously filled only ~32-44% of their frame (about a third the size of the Azure icons) because their viewBox carried excess padding. Their viewBoxes were tightened to ~85% fill so they now match the Azure icons exactly.
+- **1,773 masters** across 17 groups (was 1,259).
+
+### Known issues
+
+- `Office365 — Word` does not render in the preview export (an XML-entity quirk in the source SVG); the stencil master itself is unaffected.
+- Three source SVGs remain skipped as before (no renderable paths): `Cognitive Service Knowledge`, `O365 - Power Automate`, `Storage Account Blob`.
+
 ## V-5.0 -- 2026-05-16
 
 First release of the rewritten cross-platform Python build pipeline. Drops the PowerShell + Visio-COM dependency entirely; emits the OOXML directly. Every fix landed against the legacy pipeline carries forward, plus a comprehensive sweep surfaced through end-to-end visual inspection against Visio's own PNG export.

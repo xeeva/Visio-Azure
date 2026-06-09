@@ -41,7 +41,7 @@ If you build slide decks, websites, marketing materials, or anything that consum
 ```
 Visio-Azure-Premium/
 ├── V-5.0/
-│   ├── svg/                          # 1,259 individual .svg files
+│   ├── svg/                          # 1,773 individual .svg files
 │   │   ├── AI_Azure-OpenAI.svg
 │   │   ├── ...
 │   ├── png-256/                      # 256 px renders

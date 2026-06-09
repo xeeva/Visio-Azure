@@ -66,7 +66,7 @@ No. The `.vssx` files in this repo are free and complete -- they're everything y
 
 ### What do I get for sponsoring?
 
-See [Sponsorship](sponsorship). The short answer: read access to a private repo with 1,259 standalone SVGs and two sizes of PNG (256 px and 1024 px), plus the un-watermarked preview, plus early access to new releases.
+See [Sponsorship](sponsorship). The short answer: read access to a private repo with 1,773 standalone SVGs and two sizes of PNG (256 px and 1024 px), plus the un-watermarked preview, plus early access to new releases.
 
 ### How fast does access get granted after I sponsor?
 

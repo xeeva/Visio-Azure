@@ -5,7 +5,7 @@ title: Enabling Search
 
 # Enabling Visio Shape Search
 
-Visio's **Shape Search** is the search box at the top of the Shapes panel. Typing anything into it does a full-text query across every open stencil's masters -- name, keywords, prompts, descriptions. When it works it's the single fastest way to find one of 1,259 icons.
+Visio's **Shape Search** is the search box at the top of the Shapes panel. Typing anything into it does a full-text query across every open stencil's masters -- name, keywords, prompts, descriptions. When it works it's the single fastest way to find one of 1,773 icons.
 
 The catch: the legacy community Azure stencils didn't write keywords into the cells Visio actually indexes, so shape search appeared **broken** for users on those stencils. Visio-Azure fixes this. But you also need Visio's own search feature enabled to make use of the fix.
 

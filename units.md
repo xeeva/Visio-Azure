@@ -1,0 +1,67 @@
+---
+layout: default
+title: Metric vs US Units
+---
+
+# Metric vs US units: which stencil set to download
+
+Visio-Azure ships **two complete, identical icon sets**. They differ in exactly one thing: the internal **measurement unit** each stencil is authored in. Pick the one that matches the drawing you work in and everything drops at the right size, snaps to the grid, and reports sensible dimensions.
+
+> **TL;DR** — Work in **cm / mm**? Take **Metric** (`_m`, the `M/` folder). Work in **inches / feet**? Take **US** (`_u`, the `U/` folder). The artwork is the same either way.
+
+## Why are there two stencils?
+
+A Visio master stores its geometry in real-world units. When you drag a master onto a page, Visio places it at that physical size and then displays its dimensions in **the page's** measurement units.
+
+- A master authored at **20 mm** dropped onto a **metric** page reads as a clean *20 mm* and lines up with a millimetre grid.
+- The same number interpreted on a **US (inches)** page does not land on a tidy imperial value, so the icon can arrive at an awkward physical size and its Shape Data measurements read oddly (e.g. *0.787 in* instead of a round figure).
+
+Rather than force one world onto the other, we build each stencil twice:
+
+| Build | Suffix | Folder | Authored in | Page scale |
+| --- | --- | --- | --- | --- |
+| **Metric** | `_m` | `M/` | millimetres | metric (mm / cm) |
+| **US** | `_u` | `U/` | inches | US (in / ft) |
+
+Everything else — the artwork, the nine connection points, the seven Shape Data fields, the caption placement, and the search keywords — is **byte-for-byte the same intent** in both. Only the unit system and page scale change.
+
+## How do I know which my Visio uses?
+
+In Visio, open a drawing and check:
+
+**Design → Page Setup → Page Properties → Measurement units**
+
+- If it shows **Millimetres / Centimetres / Metres** → download **Metric**.
+- If it shows **Inches / Feet** → download **US**.
+
+A quick rule of thumb: most of the world (Australia, Europe, UK, NZ, most of Asia) defaults to metric. The United States and a few imperial-template workflows default to US. The unit usually follows the template you started your drawing from, not your Windows locale, so check the drawing itself.
+
+## Download
+
+<div markdown="1">
+
+### 🌍 Metric (millimetres / centimetres)
+
+- **[Metric stencils — all groups (.zip)](https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-Metric-V5.zip)**
+- [All-Icons only](https://github.com/xeeva/Visio-Azure/raw/main/M/Azure_All-Icons_V-5_m.vssx) · [Drawing resources](https://github.com/xeeva/Visio-Azure/raw/main/M/Azure_Drawing-Resources_V-5.vssx) · [browse the `M/` folder](https://github.com/xeeva/Visio-Azure/tree/main/M)
+
+### 🇺🇸 US (inches / feet)
+
+- **[US stencils — all groups (.zip)](https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-US-V5.zip)**
+- [All-Icons only](https://github.com/xeeva/Visio-Azure/raw/main/U/Azure_All-Icons_V-5_u.vssx) · [Drawing resources](https://github.com/xeeva/Visio-Azure/raw/main/U/Azure_Drawing-Resources_V-5.vssx) · [browse the `U/` folder](https://github.com/xeeva/Visio-Azure/tree/main/U)
+
+</div>
+
+Each zip contains all 17 group stencils, the All-Icons stencil, and the drawing-resources companion for that unit system.
+
+## "I downloaded the wrong one"
+
+No harm done. The icons will still draw, they'll just be sized for the other unit system. Delete the stencil from your **Shapes** panel, grab the matching build, and re-drop. Because both sets carry identical names and search keywords, your existing search habits carry straight over.
+
+## Can I mix both in one drawing?
+
+Stick to one unit system per drawing. Mixing a metric stencil and a US stencil on the same page means two different physical scales on one canvas, which defeats the [uniform 20 mm sizing](icon-features#twenty-millimetre-normalised-size). Pick the set that matches your page and use it throughout.
+
+---
+
+Next: [Setup guide](getting-started){: .btn } [Icon features](icon-features){: .btn } [Enabling search](enabling-search){: .btn }
