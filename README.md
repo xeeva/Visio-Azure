@@ -8,7 +8,6 @@
 
 <br/>
 
-[![GitHub stars](https://img.shields.io/github/stars/xeeva/Visio-Azure?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117&color=58a6ff)](https://github.com/xeeva/Visio-Azure)
 [![Licence: GPL-3.0](https://img.shields.io/badge/Licence-GPL--3.0-A371F7?style=for-the-badge&logo=gnu&logoColor=white)](LICENSE)
 [![Docs](https://img.shields.io/badge/Docs-GitHub%20Pages-58a6ff?style=for-the-badge&logo=readthedocs&logoColor=white)](https://xeeva.github.io/Visio-Azure)
 [![Visio](https://img.shields.io/badge/Built%20for-Microsoft%20Visio-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://www.microsoft.com/en-au/microsoft-365/visio)
@@ -224,6 +223,11 @@ The position now is deliberate: the **functional stencils stay free and open** (
 | **V-5** | 2026-06 | 1,773 | Metric + US-unit builds. 27 dark-mode `-DM` variants. Programmatic, deterministic generation pipeline. Working shape search. Drawing-resources companion. |
 
 The current release is also published as a [GitHub Release](https://github.com/xeeva/Visio-Azure/releases) with per-unit zip downloads.
+
+> **Two things that make or break your experience with any release:**
+>
+> 1. **Match the unit of measure.** Download the build (Metric `_m` or US `_u`) that matches your Visio drawing's units. A mismatch makes icons drop at the wrong physical size and report odd dimensions — the artwork is identical, only the unit system differs. [Which one?](https://xeeva.github.io/Visio-Azure/units)
+> 2. **Shape search must be on.** Every master carries searchable keywords (group + full name), but Visio's *Search for Shapes* box has to be enabled first, and the stencil added to **My Shapes** or open in the panel. If a search returns nothing, see [Enabling search](https://xeeva.github.io/Visio-Azure/enabling-search).
 
 **[Full release notes →](https://xeeva.github.io/Visio-Azure/releases)**
 
