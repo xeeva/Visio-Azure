@@ -8,10 +8,10 @@
 
 <br/>
 
-[![Licence: GPL-3.0](https://img.shields.io/badge/Licence-GPL--3.0-A371F7?style=for-the-badge&logo=gnu&logoColor=white)](LICENSE)
-[![Docs](https://img.shields.io/badge/Docs-GitHub%20Pages-58a6ff?style=for-the-badge&logo=readthedocs&logoColor=white)](https://xeeva.github.io/Visio-Azure)
-[![Visio](https://img.shields.io/badge/Built%20for-Microsoft%20Visio-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://www.microsoft.com/en-au/microsoft-365/visio)
-[![Sponsor](https://img.shields.io/badge/Premium-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/xeeva)
+[![Licence: GPL-3.0](assets/badges/licence.svg)](LICENSE)
+[![Docs](assets/badges/docs.svg)](https://xeeva.github.io/Visio-Azure)
+[![Built for Microsoft Visio](assets/badges/visio.svg)](https://www.microsoft.com/en-au/microsoft-365/visio)
+[![Premium](assets/badges/premium.svg)](https://github.com/sponsors/xeeva)
 
 <br/>
 
