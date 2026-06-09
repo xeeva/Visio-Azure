@@ -34,6 +34,6 @@ jobs:
             Visio-Azure-Stencils-Metric-*.zip
             Visio-Azure-Stencils-US-*.zip
             Visio-Azure-Stencils-*.zip.sha256
-            M/Azure_All-Icons_*_m.vssx
-            U/Azure_All-Icons_*_u.vssx
-            M/Azure_Drawing-Resources_*.vssx
+            Stencil-Metric/Azure_All-Icons_*_m.vssx
+            Stencil-US/Azure_All-Icons_*_u.vssx
+            Stencil-Metric/Azure_Drawing-Resources_*.vssx
