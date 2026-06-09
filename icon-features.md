@@ -11,6 +11,8 @@ What every Visio-Azure master carries, why, and how to use it.
 
 Every master has nine named connection points, positioned mathematically relative to the icon's centre so any of the four cardinal directions, four diagonals, or "below the caption" anchors snap precisely:
 
+![The nine named connection points on a master](images/named-connection-points.png)
+
 | Name | Formula | Use |
 | --- | --- | --- |
 | `North` | (Width × 0.5, Height × 1.1) | Lines coming **down to** the icon from above |
@@ -24,6 +26,8 @@ Every master has nine named connection points, positioned mathematically relativ
 | `SouthOfText` | (Width × 0.5, -12 mm) | Anchor **below** the caption -- chain of icons in a vertical list |
 
 The anchors sit 10% outside the icon's bbox so a glued connector ends just outside the icon's edge -- which renders cleanly without overlap.
+
+![Connectors glued to connection points between icons](images/connection-points-example.png)
 
 ## Twenty-millimetre normalised size
 
@@ -40,6 +44,8 @@ This build is produced in two unit systems -- see [Metric vs US units](units). T
 ## Seven Shape Data fields
 
 Every non-Office365 master ships with these fields ready for resource metadata:
+
+![The Shape Data table on a master](images/shape-data-table.png)
 
 | Field | Type | Notes |
 | --- | --- | --- |
@@ -75,7 +81,9 @@ For details on why this used to be broken and how to enable Visio's own search, 
 
 A handful of Azure and third-party logos are drawn as solid black on a transparent background (Azure OpenAI, GitHub, Kafka, the App Service / Virtual Machine / SQL action glyphs, Resource Lock, BitLocker Key, and more). On a light canvas they're fine; on a dark theme or a dark-filled shape they vanish.
 
-V-5 detects every all-black icon across the corpus and ships a **white-fill twin** named with a `-DM` suffix (for example, search `OpenAI -DM` or `GitHub -DM`). The twin has every fill recoloured white, so it reads cleanly on a dark canvas while the original stays ideal for light backgrounds. There are **27** such variants.
+V-5 detects every all-black icon across the corpus and ships a **white-fill twin** named with a `-DM` suffix (for example, search `OpenAI -DM` or `GitHub -DM`). The twin has every fill recoloured white -- including the caption text -- so it reads cleanly on a dark canvas while the original stays ideal for light backgrounds. There are **27** such variants.
+
+![The original icon on a light background beside its -DM twin on a dark background](images/dark-mode-example.png)
 
 The recolour is real fill geometry, not an outline or effect, so the `-DM` icons scale exactly like any other master -- no haloing or blobbing at small sizes. Use the original on light backgrounds and the `-DM` twin on dark ones.
 
