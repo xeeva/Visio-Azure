@@ -8,10 +8,9 @@
 
 <br/>
 
-[![Licence: GPL-3.0](assets/badges/licence.svg)](LICENSE)
-[![Docs](assets/badges/docs.svg)](https://xeeva.github.io/Visio-Azure)
-[![Built for Microsoft Visio](assets/badges/visio.svg)](https://www.microsoft.com/en-au/microsoft-365/visio)
-[![Premium](assets/badges/premium.svg)](https://github.com/sponsors/xeeva)
+<a href="LICENSE"><img src="assets/badges/licence.png" alt="Licence: GPL-3.0" height="28"></a>
+<a href="https://xeeva.github.io/Visio-Azure"><img src="assets/badges/docs.png" alt="Docs: GitHub Pages" height="28"></a>
+<a href="https://github.com/sponsors/xeeva"><img src="assets/badges/premium.png" alt="Premium" height="28"></a>
 
 <br/>
 
