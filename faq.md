@@ -21,7 +21,7 @@ GPL-3 is compatible with the Microsoft icon usage terms and prevents the stencil
 
 ### Can I use these in a commercial diagram / book / course?
 
-Yes. GPL-3 explicitly permits commercial use; the only requirement is to preserve attribution. For the loose SVG/PNG asset files (sponsor-only), the same applies plus the Studio tier offers a written commercial-use clearance suitable for procurement reviews.
+Yes. GPL-3 explicitly permits commercial use; the only requirement is to preserve attribution (to both Microsoft for the icon design and this project for the packaging).
 
 ## Installation and use
 
@@ -62,19 +62,11 @@ Yes -- right-click any master in the Shapes panel → **Edit Master**. Be aware 
 
 ### Do I need to sponsor to use the stencils?
 
-No. The `.vssx` files in this repo are free and complete -- they're everything you need to use the icons inside Visio. Sponsorship is for getting the per-icon `.svg` and `.png` files as standalone assets for use outside Visio.
+No. The `.vssx` files in this repo are free and complete -- they're everything you need to use the icons inside Visio.
 
-### What do I get for sponsoring?
+### Why sponsor, then?
 
-See [Sponsorship](sponsorship). The short answer: read access to a private repo with 1,764 standalone SVGs and two sizes of PNG (256 px and 1024 px), plus the un-watermarked preview, plus early access to new releases.
-
-### How fast does access get granted after I sponsor?
-
-Within 24 hours. Send an email or comment on the access issue after sponsoring to confirm your GitHub username.
-
-### What happens if I cancel my sponsorship?
-
-You keep anything you've already downloaded under the GPL-3 licence and the Microsoft Azure icon usage terms. Access to the private repo (and to new releases) ends at the close of your last paid period.
+If the stencils save you time and you appreciate the work, sponsoring helps keep the set maintained as Microsoft refreshes its Azure icons. A separate **Premium** set (per-icon SVG/PNG files and styled Visio variants) is **coming soon**; sponsoring is the best way to register interest. See [Sponsorship](sponsorship).
 
 ## Contributing
 
