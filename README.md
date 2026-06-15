@@ -8,7 +8,7 @@
 
 <a href="LICENSE"><img src="assets/badges/licence.png" alt="Licence: GPL-3.0" height="28"></a>
 <a href="https://xeeva.github.io/Visio-Azure"><img src="assets/badges/docs.png" alt="Docs: GitHub Pages" height="28"></a>
-<a href="https://github.com/sponsors/xeeva"><img src="assets/badges/premium.png" alt="Premium" height="28"></a>
+<a href="https://github.com/sponsors/xeeva"><img src="assets/badges/sponsor.png" alt="Sponsor" height="28"></a>
 
 ---
 
@@ -79,7 +79,7 @@ Gradient drift, padded viewBoxes, broken search cells, invisible-on-dark logos: 
 
 <img src="preview/all-icons-preview.png" alt="All Azure icons in V-5" width="100%" />
 
-*Watermarked preview of the full set. Per-icon SVG and PNG files, and styled variants, are part of **[Premium](#premium)**.*
+*Watermarked preview of the full set. Per-icon SVG and PNG files, and styled variants, are part of the coming-soon **[Premium](#sponsor)** set.*
 
 </div>
 
@@ -219,16 +219,15 @@ White `-DM` twins for black logos.
 
 <br/>
 
-## Premium
+## Sponsor
 
-The `.vssx` stencils here are **free and GPL-licensed**: all 1,764 masters, both unit systems, no strings. A separate **Premium** repository *(coming soon)* will add the parts that take real ongoing effort to produce and maintain:
+The `.vssx` stencils are **free and open** under GPL-3.0: all 1,764 masters, both unit systems, no strings. There is nothing to buy to use the icons in Visio.
 
-- 🎨 **Styled Visio stencils** — alternate visual treatments of the full set (e.g. glass / 3D / mono) for design-led diagrams
-- 🖼️ **Per-icon raster (PNG) renders** — 256 px and 1024 px, drop-ready for slides, docs, and the web
-- 📐 **Per-icon SVG files** — normalised, cleaned, and ready to drop into any tool
-- 🚀 Early access to new releases and styled sets
+If they save you time and you appreciate the work, sponsoring helps keep the set maintained and regenerated as Microsoft refreshes its Azure icons. Any amount, one-off or monthly, is genuinely appreciated.
 
-**[Register interest / sponsor →](https://github.com/sponsors/xeeva)**
+**[Sponsor on GitHub →](https://github.com/sponsors/xeeva)**
+
+A separate **Premium** set is *coming soon*: per-icon SVG and PNG renders plus styled Visio stencil variants. The details are still being worked out, so there is nothing to sign up for yet; sponsoring is the best way to register interest.
 
 <br/>
 
@@ -265,7 +264,7 @@ This is a community project. It is not affiliated with, sponsored by, or endorse
 - **Request an icon:** [open an Icon Request](https://github.com/xeeva/Visio-Azure/issues/new?template=icon_request.yml): missing a service? Ask for it.
 - **Report a problem:** [open a Bug Report](https://github.com/xeeva/Visio-Azure/issues/new?template=bug_report.yml): a wrong-looking icon, rendering glitch, or search miss.
 - **Discussions:** [github.com/xeeva/Visio-Azure/discussions](https://github.com/xeeva/Visio-Azure/discussions): ask questions, show off diagrams, propose ideas.
-- **Premium / sponsor:** [github.com/sponsors/xeeva](https://github.com/sponsors/xeeva): styled variants plus the SVG/PNG asset library.
+- **Sponsor:** [github.com/sponsors/xeeva](https://github.com/sponsors/xeeva): support ongoing maintenance, and register interest in the coming-soon Premium set.
 
 <div align="center">
 
