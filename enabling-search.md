@@ -22,7 +22,7 @@ Every master in Visio-Azure carries the service name, group, and a handful of us
 | Document-level `<Keywords>` in `docProps/app.xml` | All masters' keywords joined | Stencil-wide search |
 | `<dc:subject>` in `docProps/core.xml` | Same as above | Backup index |
 
-The legacy [David-Summers/Azure-Design](https://github.com/David-Summers/Azure-Design) stencils wrote keywords into only one of these (the PageSheet `ShapeKeywords` cell), which is **not** what Visio's shape search reads on modern Visio versions. Visio-Azure writes to all six.
+Most existing Azure icon stencils, including the widely-used David-Summers/Azure-Design set, write keywords into only one of these, the PageSheet `ShapeKeywords` cell, which is **not** what Visio's shape search reads on modern Visio versions; that is why typing a service name into the Shapes panel on those sets comes up empty. Visio-Azure writes to all six locations, so it is a drop-in replacement: the same icons and names, with shape search that actually works.
 
 ## Verifying it works on your machine
 
