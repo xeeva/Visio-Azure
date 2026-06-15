@@ -8,12 +8,13 @@ The first public release of Visio-Azure: a complete, searchable, drop-in Azure s
 
 ### Highlights
 
-- **1,773 masters across 17 groups** -- Azure services, configuration items, and on-prem / IaaS workloads.
+- **1,764 masters across 17 groups:** AI (101), Application (214), Compute (246), Data (146), Deployment (51), Dynamics 365 (35), Endpoint (37), Generic (77), Identity (76), IoT (45), Management (329), Networking (164), Office365 (38), Security (95), Storage (57), Workload (31), Workload-Service (22). Azure services, configuration items, and on-prem / IaaS workloads.
 - **Dual-unit builds.** Every stencil ships in a Metric (`_m`) and a US (`_u`) variant, organised into `Stencil-Metric/` and `Stencil-US/`, each with a one-click zip and the drawing-resources companion. Identical artwork, connection points, shape data, and search in both -- only the unit system differs. See [Metric vs US units](https://xeeva.github.io/Visio-Azure/units).
 - **Working shape search.** Keywords written into every cell Visio indexes -- `Master/@NameU`, `Master/Prompt`, the `ShapeKeywords` PageSheet cell, document-level `Keywords` in `docProps/app.xml`, and `dc:subject` in `docProps/core.xml` -- so typing `vmss` or `key vault` into the Shapes panel finds the master.
 - **Nine connection points, seven shape-data fields, pre-positioned captions, 20 mm normalised sizing** on every master, applied uniformly and verified against a per-master contract.
 - **27 dark-mode (`-DM`) variants.** Every all-black monochrome logo (Azure OpenAI, GitHub, Kafka, App Service / VM / SQL action glyphs, Resource Lock, BitLocker Key, …) ships a white-fill twin so it stays visible on a dark canvas. The recolour is real fill geometry, so it scales cleanly at any size.
-- **Drawing-resources companion** -- dashed boxes, lines, callouts, bubbles, glow lines/boxes (9 colours), single/dashed/thick connector arrows, and colour palettes.
+- **Drawing-resources companion** (`Azure_Drawing-Resources_V-5.vssx`, 104 masters) -- dashed boxes, lines, callouts, bubbles, glow lines/boxes (9 colours), single/dashed/thick connector arrows, and colour palettes.
+- **Deterministic builds.** Identical input produces byte-identical `.vssx` files; the per-icon SVG/PNG asset library and styled variants ship separately via Premium (coming soon).
 
 ### How it's built
 
