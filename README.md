@@ -31,6 +31,14 @@ The Azure stencils you can find are a patchwork: hundreds of products spread acr
 
 These limitations are the difference between *Azure icons in Visio* and *an Azure stencil for Visio*.
 
+<div align="center">
+
+<img src="assets/example-consistency.png" alt="Icons pulled from different official Azure stencils dropped onto one page at wildly different sizes" width="100%" />
+
+*Pull icons from the various official stencils onto one page and they land at wildly different sizes, a collage instead of a diagram. This is the inconsistency Visio-Azure fixes.*
+
+</div>
+
 ## The Solution
 
 **Visio-Azure** unifies and standardises the lot into one fully-equipped Visio stencil set: **1,764 masters** across 17 groups, Azure services, configuration items, and on-prem / IaaS workloads, shipped in both **Metric** and **US-unit** builds. Every master in every stencil ships with:
@@ -62,14 +70,6 @@ The earlier approach was a **PowerShell + Visio-COM** script: Windows-only, pain
 | Speed | Hours, babysat | The whole set in seconds, unattended |
 
 Gradient drift, padded viewBoxes, broken search cells, invisible-on-dark logos: all handled in the build, not in a weekend of manual SVG surgery. The result is a stencil set that's consistent, reproducible, and trivial to regenerate the moment Microsoft refreshes the icons.
-
-<div align="center">
-
-<img src="assets/example-consistency.png" alt="Every Azure icon normalised to the same 20 mm drop size, lined up against the inconsistent sizes of the official flat icons" width="100%" />
-
-*Every master normalised to the same 20 mm drop size, against the mixed sizes you get dropping the official flat icons straight onto a page.*
-
-</div>
 
 <br/>
 
