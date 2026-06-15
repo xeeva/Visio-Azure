@@ -78,7 +78,9 @@ Restart Visio. The stencil now appears under **More Shapes → My Shapes**, avai
 
 ## 4. Search for services
 
-Type any service name into the search box at the top of the Shapes panel. Try `vmss`, `key vault`, `cosmos db`, `front door`. The legacy community stencils had a long-standing bug here -- the [Enabling search](enabling-search) page covers why, what's fixed, and what to do if your Visio's shape search needs to be turned on first.
+Type any service name into the search box at the top of the Shapes panel. Try `vmss`, `key vault`, `cosmos db`, `front door`. Many other community stencils have a long-standing search gap here -- the [Enabling search](enabling-search) page covers why, what Visio-Azure fixes, and what to do if your Visio's shape search needs to be turned on first.
+
+![Searching the Shapes panel for a service name and finding the matching Visio-Azure masters](images/example-search.png)
 
 ## Next steps
 

@@ -25,6 +25,8 @@ Every master has nine named connection points, positioned mathematically relativ
 
 The anchors sit 10% outside the icon's bbox so a glued connector ends just outside the icon's edge -- which renders cleanly without overlap.
 
+![A Visio-Azure master in the ShapeSheet showing its nine named connection points and seven shape-data rows](images/example-connection-points.png)
+
 ## Twenty-millimetre normalised size
 
 Each icon is fit to **20 mm on its longer side**, aspect preserved. This means:
@@ -52,6 +54,8 @@ Every non-Office365 master ships with these fields ready for resource metadata:
 PowerShell or VBA scripts can iterate the masters on a page and populate these from an Azure inventory, enabling round-trip Visio → ARM / ARM → Visio workflows.
 
 The Office365 group is excluded because those icons represent SaaS applications and don't carry ARM-style identifiers.
+
+![The Visio Shape Data panel on a dropped master, populated with ResourceId, Location, ResourceType and other fields](images/example-shape-data.png)
 
 ## Caption placement
 
@@ -82,6 +86,12 @@ For details on why this used to be broken and how to enable Visio's own search, 
 - `Language = 1033` (en-US, the canonical Visio language ID)
 - `Char.LangID = 1033` (consistent caption language)
 - AlternativeText set to the display name -- screen reader / accessibility tooling works correctly
+
+## Dark-mode (`-DM`) variants
+
+Twenty-seven Azure logos are drawn in near-black monochrome (Azure OpenAI, GitHub, Kafka, the App Service / VM / SQL action glyphs, and similar). On a dark canvas they vanish. Each ships a white-fill twin whose master name ends in ` -DM` (search the icon name plus `-DM`), with white captions, so dark-themed diagrams stay legible. The recolour is real fill geometry, so it scales cleanly at any size.
+
+![Near-black Azure logos beside their white -DM twins on a dark canvas](images/example-dark-mode.png)
 
 ## Per-master contract
 
