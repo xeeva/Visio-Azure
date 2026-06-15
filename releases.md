@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Release Notes
-description: Visio-Azure release notes and per-group master counts: V-5 ships 1,764 masters across 17 groups with working shape search and embedded stencil-panel thumbnails.
+description: "Visio-Azure release notes and per-group master counts: V-5 ships 1,764 masters across 17 groups with working shape search and embedded stencil-panel thumbnails."
 ---
 
 # Release Notes

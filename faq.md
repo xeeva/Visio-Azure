@@ -1,7 +1,7 @@
 ---
 layout: default
 title: FAQ
-description: Frequently asked questions about Visio-Azure: licensing, Visio version support, commercial use, how it compares to other Azure stencils, and how to contribute.
+description: "Frequently asked questions about Visio-Azure: licensing, Visio version support, commercial use, how it compares to other Azure stencils, and how to contribute."
 ---
 
 # Frequently Asked Questions

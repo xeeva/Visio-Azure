@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Icon Features
-description: What every Visio-Azure master carries: nine connection points, 20 mm normalised sizing, seven shape-data fields, captions, working search, and dark-mode variants.
+description: "What every Visio-Azure master carries: nine connection points, 20 mm normalised sizing, seven shape-data fields, captions, working search, and dark-mode variants."
 ---
 
 # Icon Features
