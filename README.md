@@ -20,7 +20,7 @@
 
 ## The Problem
 
-Microsoft maintains a beautiful set of Azure service icons, but they ship as flat SVGs. Dropping them onto a Visio canvas works, but you lose every Visio feature that makes diagramming productive:
+The Azure stencils you can find are a patchwork: hundreds of products spread across many separate stencils from different providers, often mixing raster PNG icons with vectors, dropped at inconsistent sizes, and many already out of date. Even setting that aside, none of them carry the Visio features that make diagramming productive:
 
 - **No connection points:** lines snap to the icon edge or centre instead of a fixed N/E/S/W/corner anchor.
 - **No properly positioned text field:** captions land in the middle of the icon and have to be repositioned by hand on every drop.
@@ -33,7 +33,7 @@ These limitations are the difference between *Azure icons in Visio* and *an Azur
 
 ## The Solution
 
-**Visio-Azure** is a fully-equipped Visio stencil set covering **1,764 masters** across 17 groups, Azure services, configuration items, and on-prem / IaaS workloads, shipped in both **Metric** and **US-unit** builds. Every master in every stencil ships with:
+**Visio-Azure** unifies and standardises the lot into one fully-equipped Visio stencil set: **1,764 masters** across 17 groups, Azure services, configuration items, and on-prem / IaaS workloads, shipped in both **Metric** and **US-unit** builds. Every master in every stencil ships with:
 
 - ✅ **Nine named connection points:** North, East, South, West, four corners, plus SouthOfText for caption anchoring
 - ✅ **Pre-positioned caption field:** the text below the icon, not over it, capped to wrap on long names
