@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Metric vs US Units
+description: Metric or US? Why Visio-Azure ships two unit builds, how a mismatch breaks shape search and icon sizing, and how to pick the stencil that matches your drawing.
 ---
 
 # Metric vs US units: which stencil set to download

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sponsorship
+description: Visio-Azure is free and open under GPL-3.0. If it saves you time, sponsoring supports ongoing maintenance; a Premium set of assets and styled stencils is coming soon.
 ---
 
 # Sponsorship

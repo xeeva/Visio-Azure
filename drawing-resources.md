@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Drawing Resources
+description: The Visio-Azure drawing-resources stencil: dashed boxes, lines, callouts, bubbles, glow lines and boxes, connector arrows, and colour palettes for annotating diagrams.
 ---
 
 # Drawing Resources

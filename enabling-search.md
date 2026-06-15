@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Enabling Search
+description: Why Visio shape search finds nothing on most Azure stencils, how Visio-Azure fixes it by writing keywords to every cell Visio indexes, and how to switch search on.
 ---
 
 # Enabling Visio Shape Search

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Getting Started
+description: Download Visio-Azure, install it into Visio's My Shapes, and build your first Azure diagram: dropping icons, gluing connectors, searching, and dark mode.
 ---
 
 # Getting Started
