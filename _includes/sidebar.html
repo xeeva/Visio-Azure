@@ -1,0 +1,36 @@
+<aside class="sidebar-enhanced sticky top-16 hidden h-[calc(100vh-4rem)] w-64 shrink-0 overflow-y-auto px-4 py-8 lg:block">
+  <nav aria-label="Documentation navigation">
+    {% assign groups = "Getting Started|Setup Guide:getting-started,Metric vs US Units:units,Enabling Search:enabling-search;Reference|Icon Features:icon-features,Drawing Resources:drawing-resources,Troubleshooting:troubleshooting,Release Notes:releases,FAQ:faq;Support|Sponsorship:sponsorship" | split: ";" %}
+    {% for group in groups %}
+      {% assign parts = group | split: "|" %}
+      <div class="mb-6">
+        <div class="mb-2 px-3 font-label text-[10px] font-semibold uppercase tracking-widest text-slate-500">
+          {{ parts[0] }}
+        </div>
+        <ul class="space-y-0.5">
+          {% assign items = parts[1] | split: "," %}
+          {% for item in items %}
+            {% assign pair = item | split: ":" %}
+            {% assign slug = pair[1] %}
+            <li>
+              {% if page.url contains slug %}
+                <a href="{{ slug | prepend: '/' | relative_url }}" class="flex cursor-pointer items-center gap-2 rounded-sm px-3 py-1.5 text-sm transition-all duration-200 bg-primary/5 font-medium text-primary border-l-2 border-primary">{{ pair[0] }}</a>
+              {% else %}
+                <a href="{{ slug | prepend: '/' | relative_url }}" class="flex cursor-pointer items-center gap-2 rounded-sm px-3 py-1.5 text-sm transition-all duration-200 text-slate-400 hover:text-primary hover:bg-surface-container-high/50">{{ pair[0] }}</a>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+    <div class="mb-6">
+      <div class="mb-2 px-3 font-label text-[10px] font-semibold uppercase tracking-widest text-slate-500">
+        Downloads
+      </div>
+      <ul class="space-y-0.5">
+        <li><a href="https://github.com/xeeva/Visio-Azure/releases/tag/V-5" target="_blank" rel="noopener noreferrer" class="flex cursor-pointer items-center gap-2 rounded-sm px-3 py-1.5 text-sm transition-all duration-200 text-slate-400 hover:text-primary hover:bg-surface-container-high/50">Release V-5</a></li>
+        <li><a href="https://github.com/xeeva/Visio-Azure" target="_blank" rel="noopener noreferrer" class="flex cursor-pointer items-center gap-2 rounded-sm px-3 py-1.5 text-sm transition-all duration-200 text-slate-400 hover:text-primary hover:bg-surface-container-high/50">GitHub Repository</a></li>
+      </ul>
+    </div>
+  </nav>
+</aside>

@@ -1,6 +1,32 @@
 title: Visio-Azure
-description: A modern, searchable Visio stencil set for Microsoft Azure. 1,773 masters, in Metric and US units. Working shape search, connection points, shape data.
-theme: jekyll-theme-cayman
+description: A modern, searchable Visio stencil set for Microsoft Azure service icons. 1,764 masters across 17 groups, in Metric and US units. Working shape search, connection points, shape data, and dark-mode variants.
 baseurl: /Visio-Azure
 url: https://xeeva.github.io
+lang: en-AU
 show_downloads: false
+
+author:
+  name: David Summers
+  url: https://github.com/xeeva
+
+twitter:
+  card: summary_large_image
+
+# default social-preview image for every page (jekyll-seo-tag)
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /Visio-Azure/images/og-preview.png
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# llms.txt and robots.txt must ship verbatim
+include:
+  - llms.txt
+  - robots.txt
+
+# directory-style URLs (/getting-started/), matching canonical links
+permalink: pretty

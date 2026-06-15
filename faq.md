@@ -11,13 +11,13 @@ title: FAQ
 
 No. Microsoft owns the **Azure service icons** themselves. This project is a community-built Visio stencil set wrapping those icons with the connection points, shape data, sizing, and search keywords that Microsoft's own publishing format (flat SVG) doesn't include. The icons are used with Microsoft's permission for community redistribution and are subject to Microsoft's usage terms (free for diagrams, attribution required for icon design).
 
-### How is the set built?
+### How is this different from the legacy David-Summers/Azure-Design repo?
 
-It's generated programmatically. The build scans the source artwork, normalises and scales it, emits the Visio OOXML directly, and verifies every master against a fixed contract -- cross-platform, no Visio install required, and deterministic (identical input produces byte-identical `.vssx`). An earlier approach used PowerShell driving Visio over COM, one shape at a time on Windows, with broken icons fixed by hand; the pipeline replaces that entirely and corrects gradients, sizing, search cells, and dark-canvas visibility automatically. See [Release Notes](releases).
+Same lineage, same community, completely rewritten build pipeline. The legacy repo used PowerShell + Visio COM, which required a Windows-with-Visio install just to *build* the stencil and shipped with a long-standing broken-search bug. V-5.0 is cross-platform Python that emits the OOXML directly, ships with working search, and has comprehensively swept out the rendering bugs the legacy pipeline carried for years. See [Release Notes](releases) for the full list.
 
 ### Why GPL-3 and not MIT?
 
-GPL-3 is compatible with the Microsoft icon usage terms and prevents the stencil from being relicensed under a more restrictive licence by downstream consumers -- the work stays free for everyone who builds on it.
+Carry-over from the original Azure-Design repo. GPL-3 is compatible with the Microsoft icon usage terms and prevents the stencil from being relicensed under a more restrictive licence by downstream consumers -- the work stays free for everyone who builds on it.
 
 ### Can I use these in a commercial diagram / book / course?
 
@@ -52,7 +52,7 @@ Three things to try, in order:
 
 ### My icons are tiny / different sizes
 
-The generation pipeline handles this automatically. If you're seeing it on a fresh V-5 download, please open an issue with a screenshot and the icon name -- it's worth investigating.
+This was a real bug in the legacy build but is fixed in V-5.0. If you're seeing it on a fresh V-5.0 download, please open an issue with a screenshot and the icon name -- it's worth investigating.
 
 ### Can I edit / customise a master?
 
@@ -66,7 +66,7 @@ No. The `.vssx` files in this repo are free and complete -- they're everything y
 
 ### What do I get for sponsoring?
 
-See [Sponsorship](sponsorship). The short answer: read access to a private repo with 1,773 standalone SVGs and two sizes of PNG (256 px and 1024 px), plus the un-watermarked preview, plus early access to new releases.
+See [Sponsorship](sponsorship). The short answer: read access to a private repo with 1,764 standalone SVGs and two sizes of PNG (256 px and 1024 px), plus the un-watermarked preview, plus early access to new releases.
 
 ### How fast does access get granted after I sponsor?
 

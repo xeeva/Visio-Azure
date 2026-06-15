@@ -11,42 +11,46 @@ A step-by-step walk-through from download to first diagram.
 
 - **Microsoft Visio** -- Plan 1, Plan 2, or any of the Visio 2019 / 2021 / 2024 desktop editions. Visio for the Web is **not** supported (it cannot render custom .vssx stencils).
 - **Windows** or **macOS** -- the stencil is OOXML so it loads cleanly on either.
-- ~35 MB of disk space for the full set in one unit system.
+- ~3 MB of disk space for the full set.
 
-## 1. Pick your units
+## 1. Download
 
-Visio-Azure ships in two identical sets that differ only in measurement units. **Choose one before downloading:**
-
-- **Metric** (`_m`, the `Stencil-Metric/` folder) -- if your Visio drawings use centimetres / millimetres.
-- **US** (`_u`, the `Stencil-US/` folder) -- if they use inches / feet.
-
-Not sure? **Design → Page Setup → Measurement units** in Visio. [Full explanation →](units)
-
-## 2. Download
-
-### The full set (recommended)
-
-A single zip of every stencil -- all 17 groups, the all-icons stencil, and the drawing-resources companion -- for your unit system:
-
-- **[Metric — Visio-Azure-Stencils-Metric-V5.zip](https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-Metric-V5.zip)** (≈ 17 MB)
-- **[US — Visio-Azure-Stencils-US-V5.zip](https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-US-V5.zip)** (≈ 17 MB)
+Three options depending on how much of the collection you need.
 
 ### Just the all-icons stencil
 
-One file, every icon:
+The simplest place to start. One file, every Azure service, every drawing-resource shape.
 
-- Metric: [`M/Azure_All-Icons_V-5_m.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_All-Icons_V-5_m.vssx)
-- US: [`U/Azure_All-Icons_V-5_u.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_All-Icons_V-5_u.vssx)
+[`Azure_All-Icons_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_All-Icons_V-5.0.vssx) (≈ 3 MB)
+
+### The full set
+
+A ZIP of every stencil including the per-group stencils.
+
+[`V-5.0.zip`](https://github.com/xeeva/Visio-Azure/releases) -- from the **Releases** page.
 
 ### A specific category
 
-If you only design for one part of Azure, grab just that group from the [`Stencil-Metric/`](https://github.com/xeeva/Visio-Azure/tree/main/Stencil-Metric) (metric) or [`Stencil-US/`](https://github.com/xeeva/Visio-Azure/tree/main/Stencil-US) (US) folder. Each holds all 17 group stencils:
+If you only design for one part of Azure, grab just that group.
 
-`AI · Application · Compute · Data · Deployment · Dynamics 365 · Endpoint · Generic · Identity · IoT · Management · Networking · Office365 · Security · Storage · Workload · Workload-Service`
+| Group | File |
+| --- | --- |
+| AI | [`Azure_AI_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_AI_V-5.0.vssx) |
+| Application | [`Azure_Application_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Application_V-5.0.vssx) |
+| Compute | [`Azure_Compute_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Compute_V-5.0.vssx) |
+| Data | [`Azure_Data_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Data_V-5.0.vssx) |
+| Deployment | [`Azure_Deployment_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Deployment_V-5.0.vssx) |
+| Identity | [`Azure_Identity_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Identity_V-5.0.vssx) |
+| IoT | [`Azure_IoT_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_IoT_V-5.0.vssx) |
+| Management | [`Azure_Management_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Management_V-5.0.vssx) |
+| Networking | [`Azure_Networking_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Networking_V-5.0.vssx) |
+| Security | [`Azure_Security_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Security_V-5.0.vssx) |
+| Storage | [`Azure_Storage_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Storage_V-5.0.vssx) |
+| Workload | [`Azure_Workload_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Workload_V-5.0.vssx) |
 
-The drawing-resources companion (`Azure_Drawing-Resources_V-5.vssx`) is in both folders.
+See the [stencils/V-5.0](https://github.com/xeeva/Visio-Azure/tree/main/stencils/V-5.0) folder for the complete list of 18 per-group stencils, plus the drawing-resources companion.
 
-## 3. Install
+## 2. Install
 
 Two options. The first is faster; the second persists across drawings.
 
@@ -64,7 +68,7 @@ Drop the `.vssx` into your Visio **My Shapes** directory:
 
 Restart Visio. The stencil now appears under **More Shapes → My Shapes**, available in every drawing.
 
-## 4. Drop your first icon
+## 3. Drop your first icon
 
 1. In Visio, open your drawing (or **File → New → Blank Drawing**).
 2. Open the Visio-Azure stencil if it isn't already in your **Shapes** panel.
@@ -72,17 +76,12 @@ Restart Visio. The stencil now appears under **More Shapes → My Shapes**, avai
 4. Hover near an edge of the icon -- one of the nine connection points (the small blue ×) becomes active.
 5. Draw a connector from that anchor to another icon's anchor. The connector glues to the exact point, not the icon's bounding box.
 
-## 5. Search for services
+## 4. Search for services
 
 Type any service name into the search box at the top of the Shapes panel. Try `vmss`, `key vault`, `cosmos db`, `front door`. The legacy community stencils had a long-standing bug here -- the [Enabling search](enabling-search) page covers why, what's fixed, and what to do if your Visio's shape search needs to be turned on first.
 
-## 6. Dark backgrounds
-
-Designing on a dark theme or onto dark-filled shapes? The 27 solid-black logos each ship a white `-DM` twin. Search for the icon name plus `-DM` (e.g. `OpenAI -DM`, `GitHub -DM`) to find it.
-
 ## Next steps
 
-- **[Metric vs US units](units)** -- which set to use and why there are two
 - **[Icon features](icon-features)** -- the full list of what each master ships with
 - **[Drawing resources](drawing-resources)** -- the companion stencil with annotation shapes
 - **[Sponsorship](sponsorship)** -- how to get the SVG and PNG asset files

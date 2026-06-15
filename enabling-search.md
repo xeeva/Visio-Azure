@@ -5,7 +5,7 @@ title: Enabling Search
 
 # Enabling Visio Shape Search
 
-Visio's **Shape Search** is the search box at the top of the Shapes panel. Typing anything into it does a full-text query across every open stencil's masters -- name, keywords, prompts, descriptions. When it works it's the single fastest way to find one of 1,773 icons.
+Visio's **Shape Search** is the search box at the top of the Shapes panel. Typing anything into it does a full-text query across every open stencil's masters -- name, keywords, prompts, descriptions. When it works it's the single fastest way to find one of 1,764 icons.
 
 The catch: the legacy community Azure stencils didn't write keywords into the cells Visio actually indexes, so shape search appeared **broken** for users on those stencils. Visio-Azure fixes this. But you also need Visio's own search feature enabled to make use of the fix.
 
@@ -22,7 +22,7 @@ Every master in Visio-Azure carries the service name, group, and a handful of us
 | Document-level `<Keywords>` in `docProps/app.xml` | All masters' keywords joined | Stencil-wide search |
 | `<dc:subject>` in `docProps/core.xml` | Same as above | Backup index |
 
-A common mistake is to write keywords into only one of these -- the PageSheet `ShapeKeywords` cell -- which is **not** what Visio's shape search reads on modern Visio versions. Visio-Azure writes to all six.
+The legacy [David-Summers/Azure-Design](https://github.com/David-Summers/Azure-Design) stencils wrote keywords into only one of these (the PageSheet `ShapeKeywords` cell), which is **not** what Visio's shape search reads on modern Visio versions. Visio-Azure writes to all six.
 
 ## Verifying it works on your machine
 
@@ -65,41 +65,15 @@ Visio caches its keyword index for performance. If you've just installed a fresh
 
 On Windows you can also force a full reindex by deleting `%USERPROFILE%\AppData\Roaming\Microsoft\Visio\ShapeSearch.idx` and restarting Visio.
 
-## Why keywords have to go in more than one place
+## Why the legacy stencils' search "worked but didn't"
 
-It's easy to set `ShapeKeywords` on the **PageSheet** of each master and assume search will find it. The PageSheet is the per-master settings sheet that holds size, fill style, layer membership, and miscellaneous cells -- it looks like the right place. But Visio's shape-search indexer reads the `Prompt` attribute on the master element itself and the `Description`, *not* an arbitrary cell inside the PageSheet. Keywords stored only there are never queried. (An earlier PowerShell + Visio-COM build made exactly this mistake.)
+The original PowerShell + Visio-COM pipeline set `Shapekeywords` on the **PageSheet** of each master. The PageSheet is the per-master settings sheet that holds size, fill style, layer membership, and miscellaneous cells. It looked like the right place to put keywords -- but Visio's shape-search indexer reads the `Prompt` attribute on the master element itself and the `Description`, *not* an arbitrary cell inside the PageSheet. So the keywords were stored, but never queried.
 
 Visio-Azure writes the same keyword string to every reasonable location. If a future Visio version changes which cell its indexer reads, search will still work because the data is in all of them.
 
-## Known issue: search may fail on metric-units pages
-
-On some Visio installations (under investigation; first reported in Visio for Microsoft 365 on Windows), shape search returns no results when the active drawing's measurement units are set to **Metric**, but works correctly on the **same stencil** when the drawing is in **US units**.
-
-### Workaround
-
-Create the drawing in US units, search and drop the icons you need, then change the page to metric:
-
-1. **File → New → Blank Drawing (US Units)**.
-2. Open the Visio-Azure stencil. Search and drop icons normally.
-3. **Design → Page Setup → Page Properties → Measurement Units → Millimetres**. (Or right-click the page tab → **Page Setup**.)
-
-Existing dropped icons retain their geometry; subsequent drops are sized in mm.
-
-### Why it happens
-
-We don't have a confirmed root cause yet. The stencil's `PageScale` / `DrawingScale` cells are emitted with `V='0.03937007874015748' U='MM'` -- byte-for-byte identical to what Visio writes natively for a metric stencil. Master attributes, keyword cells (`ShapeKeywords`, `Keywords`, `Prompt`, document-level `Keywords`), and PageSheet structure all match canonical Visio output.
-
-This points at a Visio-side behaviour rather than a stencil bug, but we want to confirm before closing the investigation. If you can reproduce the issue, please add detail to the tracking issue at [github.com/xeeva/Visio-Azure/issues](https://github.com/xeeva/Visio-Azure/issues) including:
-
-- Visio version (Help → About Microsoft Visio -- include the build number)
-- OS and locale
-- Whether the drawing was created from a metric template or converted later
-- A screenshot of the empty search panel
-
 ## Still no results?
 
-If you see `vmss` failing on Visio-Azure stencils specifically (not on Visio's built-in shapes), and you're already on a US-units drawing:
+If you see `vmss` failing on Visio-Azure stencils specifically (not on Visio's built-in shapes), the stencil file is corrupt or out-of-date.
 
-1. Re-download the stencil from the [releases page](https://github.com/xeeva/Visio-Azure/releases) -- a truncated download leaves the keyword index missing.
-2. Force a Visio shape-search reindex by deleting `%APPDATA%\Microsoft\Visio\ShapeSearch.idx` and restarting Visio.
-3. Open an issue at [github.com/xeeva/Visio-Azure/issues](https://github.com/xeeva/Visio-Azure/issues) with your Visio version, OS, and the search term that didn't return anything.
+1. Re-download the stencil from the [releases page](https://github.com/xeeva/Visio-Azure/releases).
+2. Open an issue at [github.com/xeeva/Visio-Azure/issues](https://github.com/xeeva/Visio-Azure/issues) with your Visio version, OS, and the search term that didn't return anything.

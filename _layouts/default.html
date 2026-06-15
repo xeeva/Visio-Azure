@@ -1,71 +1,39 @@
 <!DOCTYPE html>
 <html lang="en-AU">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  {% include head-custom.html %}
-</head>
-<body>
-  <header class="page-header" role="banner">
-    <h1 class="project-name"><a href="{{ '/' | relative_url }}" style="color: inherit; text-decoration: none;">{{ site.title }}</a></h1>
-    <h2 class="project-tagline">{{ site.description }}</h2>
-    <a href="https://github.com/xeeva/Visio-Azure" class="btn">GitHub</a>
-    <a href="https://github.com/xeeva/Visio-Azure/issues" class="btn">Issues</a>
-    <a href="https://github.com/xeeva/Visio-Azure/discussions" class="btn">Discussions</a>
-    <a href="https://github.com/sponsors/xeeva" class="btn">Sponsor</a>
-  </header>
+{% include site-head.html %}
+<body class="ambient-bg min-h-screen bg-surface-dim text-on-surface font-body antialiased">
+  <div class="relative z-10">
 
-  <div class="docs-wrapper">
-    <nav class="docs-sidebar" role="navigation" aria-label="Documentation">
-      <div class="sidebar-inner">
-        <div class="sidebar-section">
-          <a href="{{ '/' | relative_url }}" class="sidebar-link {% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">Home</a>
+{% include nav.html %}
+
+    <div class="flex pt-16">
+{% include sidebar.html %}
+
+      <main class="mx-auto max-w-4xl flex-1 px-4 py-12 sm:px-6 lg:px-8">
+        <div class="mb-10 border-b border-on-surface/5 pb-8">
+          <div class="mb-3 inline-flex items-center gap-2 rounded-sm border border-primary/15 bg-primary/5 px-3 py-1">
+            <span class="font-label text-[10px] uppercase tracking-widest text-primary">Documentation</span>
+          </div>
+          <h1 class="font-headline text-4xl font-bold tracking-tighter text-on-surface md:text-5xl">
+            {{ page.title }}
+          </h1>
         </div>
-
-        <div class="sidebar-section">
-          <div class="sidebar-heading">Getting Started</div>
-          <a href="{{ '/getting-started' | relative_url }}" class="sidebar-link {% if page.url contains 'getting-started' %}active{% endif %}">Setup Guide</a>
-          <a href="{{ '/units' | relative_url }}" class="sidebar-link {% if page.url contains 'units' %}active{% endif %}">Metric vs US Units</a>
-          <a href="{{ '/enabling-search' | relative_url }}" class="sidebar-link {% if page.url contains 'enabling-search' %}active{% endif %}">Enabling Search</a>
+        <article class="docs-content-panel p-6 sm:p-8 lg:p-10">
+          <div class="prose">
+            {{ content }}
+          </div>
+        </article>
+        <div class="mt-12 flex items-center justify-center gap-2 text-on-surface-variant/30">
+          <div class="h-px flex-1 bg-gradient-to-r from-transparent via-on-surface/5 to-transparent"></div>
+          <span class="material-symbols-outlined text-sm">hub</span>
+          <div class="h-px flex-1 bg-gradient-to-r from-transparent via-on-surface/5 to-transparent"></div>
         </div>
+      </main>
+    </div>
 
-        <div class="sidebar-section">
-          <div class="sidebar-heading">Reference</div>
-          <a href="{{ '/icon-features' | relative_url }}" class="sidebar-link {% if page.url contains 'icon-features' %}active{% endif %}">Icon Features</a>
-          <a href="{{ '/drawing-resources' | relative_url }}" class="sidebar-link {% if page.url contains 'drawing-resources' %}active{% endif %}">Drawing Resources</a>
-          <a href="{{ '/troubleshooting' | relative_url }}" class="sidebar-link {% if page.url contains 'troubleshooting' %}active{% endif %}">Troubleshooting</a>
-          <a href="{{ '/releases' | relative_url }}" class="sidebar-link {% if page.url contains 'releases' %}active{% endif %}">Release Notes</a>
-          <a href="{{ '/faq' | relative_url }}" class="sidebar-link {% if page.url contains 'faq' %}active{% endif %}">FAQ</a>
-        </div>
+{% include footer.html %}
 
-        <div class="sidebar-section">
-          <div class="sidebar-heading">Premium</div>
-          <a href="{{ '/sponsorship' | relative_url }}" class="sidebar-link {% if page.url contains 'sponsorship' %}active{% endif %}">Premium &amp; Assets</a>
-          <a href="https://github.com/sponsors/xeeva" class="sidebar-link external">Sponsor on GitHub</a>
-        </div>
-
-        <div class="sidebar-section">
-          <div class="sidebar-heading">Community</div>
-          <a href="https://github.com/xeeva/Visio-Azure/issues" class="sidebar-link external">Issues</a>
-          <a href="https://github.com/xeeva/Visio-Azure/discussions" class="sidebar-link external">Discussions</a>
-          <a href="https://github.com/xeeva/Visio-Azure" class="sidebar-link external">GitHub</a>
-        </div>
-      </div>
-    </nav>
-
-    <main class="main-content" role="main">
-      {{ content }}
-    </main>
   </div>
-
-  <footer class="site-footer">
-    <span class="site-footer-credits">
-      &copy; 2026 <a href="https://github.com/xeeva">David Summers</a>.
-      Visio-Azure is released under the <a href="https://github.com/xeeva/Visio-Azure/blob/main/LICENSE">GPL-3.0 Licence</a>.
-    </span>
-  </footer>
+{% include menu-script.html %}
 </body>
 </html>

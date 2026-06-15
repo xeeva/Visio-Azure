@@ -5,7 +5,7 @@ title: Drawing Resources
 
 # Drawing Resources
 
-`Azure_Drawing-Resources_V-5.vssx` ships alongside the icon set (in both the `Stencil-Metric/` and `Stencil-US/` folders) as a companion stencil with 93 hand-authored shapes for annotating diagrams: dashed boxes, lines of every flavour, callouts, bubbles, glow effects, and connector arrows.
+`Azure_Drawing-Resources_V-5.0.vssx` ships alongside the icon set as a companion stencil with 93 hand-authored shapes for annotating diagrams: dashed boxes, lines of every flavour, callouts, bubbles, glow effects, and connector arrows.
 
 ## Contents
 
@@ -39,7 +39,7 @@ title: Drawing Resources
 | **G_GlowLine** | 9 colours | Coloured glow halos along a line: Red, Green, Blue, Yellow, Teal, Pink, **Purple**, **Orange**, **White** |
 | **H_GlowBox** | 9 colours | Coloured glow halo around a box: same nine colours |
 
-The three colours in **bold** are new in V-5.
+The three colours in **bold** are new in V-5.0.
 
 ### Palettes
 
@@ -47,26 +47,6 @@ The three colours in **bold** are new in V-5.
 | --- | --- | --- |
 | **Z_Colours-01** | Single reference master | Visio colour palette swatch for picking consistent fills |
 | **Z_Gradients-01** | Single reference master | Visio gradient palette swatch |
-
-### Azure-Arc style set (new in V-5)
-
-A coherent dark-theme palette reverse-engineered from the official Microsoft Azure Arc-enabled data services architecture diagram. Use to author diagrams that match the Microsoft Learn / Azure Docs visual language.
-
-| Master | Visual | Use |
-| --- | --- | --- |
-| **J_Arc-Container-Navy-01** | Navy `#152549` fill, cyan `#00d4ff` border, cyan glow halo | Dark-theme grouping container -- the "Azure", "Azure Stack HCI", ... cards in Microsoft Arc diagrams. |
-| **J_Arc-Container-Steel-01** | Slightly lighter `#1b3357` fill, brighter cyan border | Nested container inside a Container-Navy for visual hierarchy. |
-| **J_Arc-Scope-Red-01** | Red `#dc3545` dashed border, transparent fill | "This area is Azure Arc enabled" scope marker -- the red dashed rectangle in the source diagram. |
-| **J_Arc-Scope-Cyan-01** | Cyan `#00b8e6` dashed border, transparent fill | Generic logical-grouping scope marker. |
-| **J_Arc-Connector-CyanGlow-01** | White line with cyan glow halo | Connector lines between dark containers -- pops visually against navy backgrounds. |
-| **J_Arc-Connector-CyanThin-01** | Thin solid cyan line, no glow | Minimal connector for high-density node graphs. |
-| **J_Arc-PlatformBar-Azure-01** | Solid Microsoft blue `#0078D4` | Bottom-row platform banner -- "Azure" footer. |
-| **J_Arc-PlatformBar-AWS-01** | Solid Amazon orange `#FF9900` | "Amazon Web Services" footer. |
-| **J_Arc-PlatformBar-GCP-01** | Solid Google blue `#4285F4` | "Google Cloud Platform" footer. |
-| **J_Arc-PlatformBar-VMware-01** | Solid VMware grey-blue `#607078` | "VMware vSphere" footer. |
-| **J_Arc-PlatformBar-Dark-01** | Solid navy `#152549` with cyan border | Generic dark-theme banner / header strip. |
-
-**Composing a diagram in this style:** drop platform bars across the bottom, stack Container-Navy or -Steel boxes for the service groups, connect them with Connector-CyanGlow lines, and use a Scope-Red rectangle to mark the Arc-enabled region.
 
 ## Using the connector arrows
 
@@ -80,6 +60,6 @@ Drop a **H_GlowBox-Red-01** behind a group of icons to highlight them in a red h
 
 ## Origin
 
-The drawing-resources stencil is a hand-authored collection of annotation tools, extended in V-5 with the new colour and arrow variants. It's regenerated as part of the build alongside the icon stencils.
+The drawing-resources stencil is the same hand-authored collection that shipped with the legacy [David-Summers/Azure-Design](https://github.com/David-Summers/Azure-Design) repo for years -- vendored verbatim in V-5.0 plus the new colour and arrow variants. The legacy file is preserved in the build pipeline's `resources/Stencil-Drawing-Resources-source.vssx` and the extended copy is regenerated via `scripts/extend_drawing_stencil.py`.
 
 If you have a request for a new variant (different glow colour, specific connector style, a custom callout), open a [Discussion](https://github.com/xeeva/Visio-Azure/discussions).

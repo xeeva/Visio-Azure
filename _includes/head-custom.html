@@ -1,18 +1,30 @@
 <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32.png' | relative_url }}">
 
-<!-- Open Graph / social preview -->
-<meta property="og:title" content="{{ page.title | default: site.title }}">
-<meta property="og:description" content="{{ page.description | default: site.description }}">
-<meta property="og:type" content="website">
-<meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:image" content="{{ '/images/og-preview.png' | absolute_url }}">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:site_name" content="Visio-Azure">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ page.title | default: site.title }}">
-<meta name="twitter:description" content="{{ page.description | default: site.description }}">
-<meta name="twitter:image" content="{{ '/images/og-preview.png' | absolute_url }}">
+<!-- Structured data for search engines and AI assistants -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Visio-Azure",
+  "applicationCategory": "DesignApplication",
+  "operatingSystem": "Windows, macOS (Microsoft Visio)",
+  "description": "A modern, searchable Microsoft Visio stencil set for Microsoft Azure service icons. 1,764 masters across 17 groups with working shape search, nine named connection points, seven resource shape-data fields, dark-mode variants, and Metric and US-unit builds.",
+  "url": "https://xeeva.github.io/Visio-Azure/",
+  "downloadUrl": "https://github.com/xeeva/Visio-Azure/releases/tag/V-5",
+  "softwareVersion": "V-5",
+  "datePublished": "2026-06",
+  "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "David Summers",
+    "url": "https://github.com/xeeva"
+  },
+  "keywords": "Visio stencils, Azure icons, architecture diagram, vssx, Azure architecture, cloud diagram, Microsoft Azure, Azure Visio shapes"
+}
+</script>
