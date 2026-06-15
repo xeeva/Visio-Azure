@@ -85,13 +85,13 @@ If Microsoft has published an SVG for the service, link to it in a new issue. If
 
 ### Can I contribute fixes?
 
-Pull requests welcome on the **build pipeline** at <https://github.com/xeeva/visio-azure> (the lowercase / dev repo). This repo (the release / asset distribution) is downstream output -- to fix something you fix the pipeline, then a new build replaces this repo's contents.
+The build pipeline that generates these stencils is private, and this repo is its published output (regenerated on every build), so it doesn't take pull requests directly. The best way to get something fixed is to [open an issue](https://github.com/xeeva/Visio-Azure/issues) with the details -- a wrong-looking icon, a search miss, or a rendering glitch. Fixes are made in the pipeline and ship in the next release.
 
 ## Technical
 
-### Is the build pipeline open-source too?
+### Is the build pipeline public?
 
-Yes -- the cross-platform Python pipeline that produces these stencils lives at <https://github.com/xeeva/visio-azure>. Cross-platform, no Visio install required to build, 32-test pytest suite.
+No. The pipeline is a private cross-platform Python toolchain (no Visio install required to build, with a full automated test suite); this repository is the released output it produces. To get something changed, [open an issue](https://github.com/xeeva/Visio-Azure/issues) and the fix lands in the next build.
 
 ### Why not Draw.io / Mermaid / Lucidchart?
 
