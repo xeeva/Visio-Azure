@@ -60,6 +60,6 @@ Drop a **H_GlowBox-Red-01** behind a group of icons to highlight them in a red h
 
 ## Origin
 
-The drawing-resources stencil is the same hand-authored collection that shipped with the legacy [David-Summers/Azure-Design](https://github.com/David-Summers/Azure-Design) repo for years -- vendored verbatim in V-5.0 plus the new colour and arrow variants. The legacy file is preserved in the build pipeline's `resources/Stencil-Drawing-Resources-source.vssx` and the extended copy is regenerated via `scripts/extend_drawing_stencil.py`.
+The drawing-resources stencil is a hand-authored collection of annotation shapes refined over years of Azure diagramming, vendored into V-5.0 with new colour and arrow variants. The base file is preserved in the build pipeline's `resources/Stencil-Drawing-Resources-source.vssx` and the extended copy is regenerated via `scripts/extend_drawing_stencil.py`.
 
 If you have a request for a new variant (different glow colour, specific connector style, a custom callout), open a [Discussion](https://github.com/xeeva/Visio-Azure/discussions).

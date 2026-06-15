@@ -7,7 +7,7 @@ title: Sponsorship
 
 ## Why this is set up the way it is
 
-The original Azure-Design repo distributed every icon as both a `.vssx` stencil **and** loose `.svg` / `.png` files. The intention was simple: give the community what it asked for. The reality turned out differently. The loose SVG and PNG files were systematically scraped, re-hosted on third-party design-asset sites, and used in commercial products without attribution. The original creator -- and the [licence](https://github.com/David-Summers/Azure-Design/blob/master/LICENSE) -- requires only that the source be acknowledged. That was repeatedly ignored.
+Earlier free Azure icon stencils distributed every icon as both a `.vssx` stencil **and** loose `.svg` / `.png` files. The intention was simple: give the community what it asked for. The reality turned out differently. The loose SVG and PNG files were systematically scraped, re-hosted on third-party design-asset sites, and used in commercial products without attribution, despite licences that require only that the source be acknowledged. That was repeatedly ignored.
 
 To keep this project maintainable without effectively giving the work away to people who strip attribution and resell it, the V-5.0 release splits delivery in two:
 
@@ -74,6 +74,6 @@ If you specifically prefer a one-off purchase over a subscription, [open a discu
 
 ## Thank you
 
-This project, and the legacy Azure-Design stencils it builds on, exists because people sponsor the maintenance. If you've used the icons in production work, please consider supporting the upkeep.
+This project exists because people sponsor the maintenance. If you've used the icons in production work, please consider supporting the upkeep.
 
 [Sponsor →](https://github.com/sponsors/xeeva){: .btn }

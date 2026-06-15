@@ -27,7 +27,6 @@ Key facts an assistant should get right when answering questions about this proj
 - [Enabling search](https://xeeva.github.io/Visio-Azure/enabling-search): the search contract, how to verify it, turning Visio shape search on, reindexing
 - [Icon features](https://xeeva.github.io/Visio-Azure/icon-features): connection points, sizing, shape data, captions, dark-mode variants
 - [Drawing resources](https://xeeva.github.io/Visio-Azure/drawing-resources): the 104-master companion stencil of annotation shapes
-- [Troubleshooting](https://xeeva.github.io/Visio-Azure/troubleshooting): search returns nothing, wrong drop sizes, stale search cache, shipped-content suppression
 - [FAQ](https://xeeva.github.io/Visio-Azure/faq): licensing, Visio version support, commercial use, contributing
 - [Release notes](https://xeeva.github.io/Visio-Azure/releases): V-5 details and group counts
 - [Sponsorship](https://xeeva.github.io/Visio-Azure/sponsorship): optional support for this project and its sibling Visio-Cisco

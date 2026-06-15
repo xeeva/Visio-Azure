@@ -68,10 +68,6 @@ Total drawing-resources masters: 84 → 104.
 
 Three SVGs in the source corpus were skipped because they contain no renderable paths (Microsoft authoring artefacts): `Cognitive Services Knowledge`, `O365 - Power Automate`, `Storage Account Blob`.
 
-## V-4.7 -- 2024-09
+## Replaces: David-Summers/Azure-Design
 
-Final release of the legacy PowerShell + Visio-COM pipeline at [David-Summers/Azure-Design](https://github.com/David-Summers/Azure-Design). 1,233 icons. Broken shape search. Intermittent rendering issues on icons with translucent overlays, rotated primitives, or gradient fills. Preserved for download but no longer maintained.
-
-## Earlier versions
-
-Earlier releases are still available at the original repo: <https://github.com/David-Summers/Azure-Design/releases>.
+Visio-Azure replaces the older David-Summers/Azure-Design stencils. Those were built with a PowerShell + Visio-COM pipeline (1,233 icons, last updated 2024-09), shipped with broken shape search, and had intermittent rendering issues on icons with translucent overlays, rotated primitives, or gradient fills. They are no longer maintained; Visio-Azure carries the same icons forward with working search and clean rendering.

@@ -11,13 +11,13 @@ title: FAQ
 
 No. Microsoft owns the **Azure service icons** themselves. This project is a community-built Visio stencil set wrapping those icons with the connection points, shape data, sizing, and search keywords that Microsoft's own publishing format (flat SVG) doesn't include. The icons are used with Microsoft's permission for community redistribution and are subject to Microsoft's usage terms (free for diagrams, attribution required for icon design).
 
-### How is this different from the legacy David-Summers/Azure-Design repo?
+### How is this different from the David-Summers/Azure-Design stencils?
 
-Same lineage, same community, completely rewritten build pipeline. The legacy repo used PowerShell + Visio COM, which required a Windows-with-Visio install just to *build* the stencil and shipped with a long-standing broken-search bug. V-5.0 is cross-platform Python that emits the OOXML directly, ships with working search, and has comprehensively swept out the rendering bugs the legacy pipeline carried for years. See [Release Notes](releases) for the full list.
+Visio-Azure is a ground-up replacement. The older David-Summers/Azure-Design stencils were built with PowerShell + Visio COM, which required a Windows-with-Visio install just to *build* the stencil and shipped with a long-standing broken-search bug. Visio-Azure is cross-platform Python that emits the OOXML directly, ships with working search, and has comprehensively swept out the rendering bugs those stencils carried for years. It keeps the same icons and names, so it drops straight in. See [Release Notes](releases) for the full list.
 
 ### Why GPL-3 and not MIT?
 
-Carry-over from the original Azure-Design repo. GPL-3 is compatible with the Microsoft icon usage terms and prevents the stencil from being relicensed under a more restrictive licence by downstream consumers -- the work stays free for everyone who builds on it.
+GPL-3 is compatible with the Microsoft icon usage terms and prevents the stencil from being relicensed under a more restrictive licence by downstream consumers -- the work stays free for everyone who builds on it.
 
 ### Can I use these in a commercial diagram / book / course?
 

@@ -1,6 +1,6 @@
 <aside class="sidebar-enhanced sticky top-16 hidden h-[calc(100vh-4rem)] w-64 shrink-0 overflow-y-auto px-4 py-8 lg:block">
   <nav aria-label="Documentation navigation">
-    {% assign groups = "Getting Started|Setup Guide:getting-started,Metric vs US Units:units,Enabling Search:enabling-search;Reference|Icon Features:icon-features,Drawing Resources:drawing-resources,Troubleshooting:troubleshooting,Release Notes:releases,FAQ:faq;Support|Sponsorship:sponsorship" | split: ";" %}
+    {% assign groups = "Getting Started|Setup Guide:getting-started,Metric vs US Units:units,Enabling Search:enabling-search;Reference|Icon Features:icon-features,Drawing Resources:drawing-resources,Release Notes:releases,FAQ:faq;Support|Sponsorship:sponsorship" | split: ";" %}
     {% for group in groups %}
       {% assign parts = group | split: "|" %}
       <div class="mb-6">
