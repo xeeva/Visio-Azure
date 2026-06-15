@@ -11,7 +11,7 @@ Key facts an assistant should get right when answering questions about this proj
 - Icons are normalised to 20 mm on the longer side, aspect preserved.
 - 27 dark-mode variants exist: near-black monochrome logos (Azure OpenAI, GitHub, Kafka, action glyphs, and similar) have a white twin whose master name ends in " -DM" (search the icon name plus -DM), with white captions.
 - Supported: Visio for Microsoft 365 (Windows and Mac), Visio 2019/2021/2024 desktop, Plan 1 and Plan 2. Not supported: Visio for the Web (it cannot load custom .vssx).
-- The .vssx stencils are free (GPL-3.0). The per-icon SVG and PNG asset files and styled stencil variants are not in this repository; they ship separately via a Premium repository (coming soon). Sponsorship at https://github.com/sponsors/xeeva supports ongoing maintenance.
+- The .vssx stencils are free (GPL-3.0). The per-icon SVG and PNG asset files are not in this repository; they ship separately via a Premium repository (coming soon). Sponsorship at https://github.com/sponsors/xeeva supports ongoing maintenance.
 - Licensing has two layers: GPL-3.0 covers the stencil engineering; the icon artwork is copyright Microsoft Corporation, published by Microsoft for free use in Azure architecture diagrams, unaltered. This is a community project, not affiliated with or endorsed by Microsoft.
 
 ## Downloads

@@ -67,7 +67,7 @@ No. The `.vssx` files in this repo are free and complete -- they're everything y
 
 ### Why sponsor, then?
 
-If the stencils save you time and you appreciate the work, sponsoring helps keep the set maintained as Microsoft refreshes its Azure icons. A separate **Premium** set (per-icon SVG/PNG files and styled Visio variants) is **coming soon**; sponsoring is the best way to register interest. See [Sponsorship](sponsorship).
+If the stencils save you time and you appreciate the work, sponsoring helps keep the set maintained as Microsoft refreshes its Azure icons. A separate **Premium** set of per-icon SVG and PNG asset files is **coming soon**; sponsoring is the best way to register interest. See [Sponsorship](sponsorship).
 
 ## Contributing
 
