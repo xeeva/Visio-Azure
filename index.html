@@ -70,8 +70,14 @@ description: "A modern, searchable Microsoft Visio stencil set for Azure: 1,764 
 
   <!-- The inconsistency we fix -->
   <section class="mb-32">
+    <div class="mb-4 inline-flex items-center gap-2 rounded-sm border border-error/20 bg-error/5 px-3 py-1">
+      <span class="font-label text-[10px] uppercase tracking-widest text-error">Straight from the official stencils</span>
+    </div>
+    <p class="mb-6 max-w-3xl leading-relaxed text-on-surface-variant">
+      This is what you get dropping icons from the various official stencils onto one page, not Visio-Azure. The same set arrives at wildly different sizes and aspect ratios: Azure Sphere and Azure Workbooks dwarf their neighbours, Azure DevOps lands small and cramped, and Azure AD Domain Services (its name now out of date, correctly <strong>Entra ID Domain Services</strong>) is tall and narrow where the rest are roughly square. Pulled together, it reads as a collage rather than a diagram.
+    </p>
     <figure class="glass-panel overflow-hidden rounded-xl p-2">
-      <img src="{{ '/images/example-consistency.png' | relative_url }}" alt="Icons pulled from different official Azure stencils dropped onto one page at wildly different sizes" class="block w-full rounded-lg" loading="lazy">
+      <img src="{{ '/images/example-consistency.png' | relative_url }}" alt="Icons from different official Azure stencils on one page at wildly different sizes and aspect ratios" class="block w-full rounded-lg" loading="lazy">
     </figure>
     <p class="mt-4 text-center text-sm text-on-surface-variant/60">Icons from the various official stencils land at wildly different sizes, a collage instead of a diagram. Visio-Azure normalises every icon to the same drop size.</p>
   </section>
