@@ -14,7 +14,7 @@ The first public release of Visio-Azure: a complete, searchable, drop-in Azure s
 - **Nine connection points, seven shape-data fields, pre-positioned captions, 20 mm normalised sizing** on every master, applied uniformly and verified against a per-master contract.
 - **27 dark-mode (`-DM`) variants.** Every all-black monochrome logo (Azure OpenAI, GitHub, Kafka, App Service / VM / SQL action glyphs, Resource Lock, BitLocker Key, …) ships a white-fill twin so it stays visible on a dark canvas. The recolour is real fill geometry, so it scales cleanly at any size.
 - **Drawing-resources companion** (`Azure_Drawing-Resources_V-5.vssx`, 104 masters) -- dashed boxes, lines, callouts, bubbles, glow lines/boxes (9 colours), single/dashed/thick connector arrows, and colour palettes.
-- **Deterministic builds.** Identical input produces byte-identical `.vssx` files; the per-icon SVG/PNG asset library and styled variants ship separately via Premium (coming soon).
+- **Deterministic builds.** Identical input produces byte-identical `.vssx` files; the per-icon SVG/PNG asset library ships separately via Premium (coming soon).
 
 ### How it's built
 

@@ -79,7 +79,7 @@ Gradient drift, padded viewBoxes, broken search cells, invisible-on-dark logos: 
 
 <img src="preview/all-icons-preview.png" alt="All Azure icons in V-5" width="100%" />
 
-*Watermarked preview of the full set. Per-icon SVG and PNG files, and styled variants, are part of the coming-soon **[Premium](#sponsor)** set.*
+*Watermarked preview of the full set. Per-icon SVG and PNG files are part of the coming-soon **[Premium](#sponsor)** set.*
 
 </div>
 
@@ -227,7 +227,7 @@ If they save you time and you appreciate the work, sponsoring helps keep the set
 
 **[Sponsor on GitHub →](https://github.com/sponsors/xeeva)**
 
-A separate **Premium** set is *coming soon*: per-icon SVG and PNG renders plus styled Visio stencil variants. The details are still being worked out, so there is nothing to sign up for yet; sponsoring is the best way to register interest.
+A separate **Premium** set is *coming soon*: per-icon SVG and PNG renders. The details are still being worked out, so there is nothing to sign up for yet; sponsoring is the best way to register interest.
 
 <br/>
 
