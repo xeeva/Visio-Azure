@@ -1,8 +1,10 @@
 <div align="center">
 
-<img src="assets/banner.png" alt="Visio-Azure: a modern, searchable Visio stencil set for Microsoft Azure service icons" width="100%" />
+<img src="assets/banner.png" alt="Visio-Azure: the free Azure Visio stencil pack of Microsoft Azure service icons for Visio" width="100%" />
 
-**1,764 masters. Working shape search. Connection points. Shape data. Metric *and* US-unit builds. Drop-in ready.**
+# Azure Visio Stencil Pack
+
+**The free Azure Visio stencil pack: 1,764 Microsoft Azure icons for Visio.** Working shape search, connection points, shape data, Metric *and* US-unit builds. A drop-in alternative to Microsoft's SVG-only icon downloads.
 
 <br/>
 
@@ -41,7 +43,7 @@ These limitations are the difference between *Azure icons in Visio* and *an Azur
 
 ## The Solution
 
-**Visio-Azure** unifies and standardises the lot into one fully-equipped Visio stencil set: **1,764 masters** across 17 groups, Azure services, configuration items, and on-prem / IaaS workloads, shipped in both **Metric** and **US-unit** builds. Every master in every stencil ships with:
+Microsoft now publishes its Azure icons only as SVG and PNG downloads, not as Visio stencils. **Visio-Azure** is the drop-in alternative: it unifies and standardises the lot into one fully-equipped **Azure Visio stencil** pack of **1,764 masters** across 17 groups, Azure services, configuration items, and on-prem / IaaS workloads, shipped in both **Metric** and **US-unit** builds. Every master in every stencil ships with:
 
 - ✅ **Nine named connection points:** North, East, South, West, four corners, plus SouthOfText for caption anchoring
 - ✅ **Pre-positioned caption field:** the text below the icon, not over it, capped to wrap on long names
