@@ -13,11 +13,11 @@ search, nine connection points per icon, resource shape data, and both Metric an
 builds. It is a drop-in **alternative to Microsoft's Azure Visio stencils**, which
 Microsoft no longer ships as stencil files.
 
-<div align="center">
-
-[**Download the Metric Azure Visio stencils**](https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-Metric-V5.zip){: .btn } &nbsp; [**Download the US Azure Visio stencils**](https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-US-V5.zip){: .btn }
-
-</div>
+<p align="center">
+  <a href="https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-Metric-V5.zip"><strong>⬇ Download the Metric Azure Visio stencils</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-US-V5.zip"><strong>⬇ Download the US Azure Visio stencils</strong></a>
+</p>
 
 ## What is an Azure Visio stencil?
 

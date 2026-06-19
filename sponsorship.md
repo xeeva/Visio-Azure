@@ -10,7 +10,7 @@ The Visio-Azure stencils are **free and open** under GPL-3.0: the full collectio
 
 If they save you time and you appreciate the work, sponsoring helps keep the set maintained and regenerated as Microsoft refreshes its Azure icons. Any amount, one-off or monthly, is genuinely appreciated.
 
-[Sponsor on GitHub →](https://github.com/sponsors/xeeva){: .btn }
+[Sponsor on GitHub →](https://github.com/sponsors/xeeva)
 
 ## Premium (coming soon)
 

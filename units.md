@@ -49,17 +49,17 @@ A quick rule of thumb: most of the world (Australia, Europe, UK, NZ, most of Asi
 
 ### Metric (millimetres / centimetres)
 
-- **[Metric stencils: all groups (.zip)](https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-Metric-V1.zip)**
+- **[Metric stencils: all groups (.zip)](https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-Metric-V5.zip)**
 - [All-Icons only](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_All-Icons_V-5_m.vssx) · [Drawing resources](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Drawing-Resources_V-5.vssx) · [browse the `Stencil-Metric/` folder](https://github.com/xeeva/Visio-Azure/tree/main/Stencil-Metric)
 
 ### US (inches / feet)
 
-- **[US stencils: all groups (.zip)](https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-US-V1.zip)**
+- **[US stencils: all groups (.zip)](https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-US-V5.zip)**
 - [All-Icons only](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_All-Icons_V-5_u.vssx) · [Drawing resources](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Drawing-Resources_V-5.vssx) · [browse the `Stencil-US/` folder](https://github.com/xeeva/Visio-Azure/tree/main/Stencil-US)
 
 </div>
 
-Each zip contains all 11 group stencils, the All-Icons stencil, and the drawing-resources companion for that unit system.
+Each zip contains all 17 group stencils, the All-Icons stencil, and the drawing-resources companion for that unit system.
 
 ## "I downloaded the wrong one"
 
@@ -71,4 +71,4 @@ Stick to one unit system per drawing. Mixing a metric stencil and a US stencil o
 
 ---
 
-Next: [Setup guide](getting-started){: .btn } [Icon features](icon-features){: .btn } [Enabling search](enabling-search){: .btn }
+Next: [Setup guide](getting-started) [Icon features](icon-features) [Enabling search](enabling-search)
