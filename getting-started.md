@@ -12,44 +12,51 @@ A step-by-step walk-through from download to first diagram.
 
 - **Microsoft Visio** -- Plan 1, Plan 2, or any of the Visio 2019 / 2021 / 2024 desktop editions. Visio for the Web is **not** supported (it cannot render custom .vssx stencils).
 - **Windows** or **macOS** -- the stencil is OOXML so it loads cleanly on either.
-- ~3 MB of disk space for the full set.
+- A few MB of disk space (the full-set zip is about 20 MB).
 
 ## 1. Download
 
-Three options depending on how much of the collection you need.
+**First, pick your units.** Visio-Azure ships in two identical builds: **Metric** (`_m`, for centimetre/millimetre drawings) and **US** (`_u`, for inch/feet drawings). Match the build to your drawing or icons drop at the wrong size and search can miss them. Unsure which you need? See [Metric vs US units](units).
 
 ### Just the all-icons stencil
 
-The simplest place to start. One file, every Azure service, every drawing-resource shape.
+The simplest place to start: one file, every Azure service.
 
-[`Azure_All-Icons_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_All-Icons_V-5.0.vssx) (≈ 3 MB)
+- Metric: [`Azure_All-Icons_V-5_m.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_All-Icons_V-5_m.vssx)
+- US: [`Azure_All-Icons_V-5_u.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_All-Icons_V-5_u.vssx)
 
 ### The full set
 
-A ZIP of every stencil including the per-group stencils.
+A ZIP of every stencil, including the per-group stencils and the drawing-resources companion.
 
-[`V-5.0.zip`](https://github.com/xeeva/Visio-Azure/releases) -- from the **Releases** page.
+- Metric: [`Visio-Azure-Stencils-Metric-V5.zip`](https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-Metric-V5.zip)
+- US: [`Visio-Azure-Stencils-US-V5.zip`](https://github.com/xeeva/Visio-Azure/raw/main/Visio-Azure-Stencils-US-V5.zip)
 
 ### A specific category
 
 If you only design for one part of Azure, grab just that group.
 
-| Group | File |
-| --- | --- |
-| AI | [`Azure_AI_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_AI_V-5.0.vssx) |
-| Application | [`Azure_Application_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Application_V-5.0.vssx) |
-| Compute | [`Azure_Compute_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Compute_V-5.0.vssx) |
-| Data | [`Azure_Data_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Data_V-5.0.vssx) |
-| Deployment | [`Azure_Deployment_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Deployment_V-5.0.vssx) |
-| Identity | [`Azure_Identity_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Identity_V-5.0.vssx) |
-| IoT | [`Azure_IoT_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_IoT_V-5.0.vssx) |
-| Management | [`Azure_Management_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Management_V-5.0.vssx) |
-| Networking | [`Azure_Networking_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Networking_V-5.0.vssx) |
-| Security | [`Azure_Security_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Security_V-5.0.vssx) |
-| Storage | [`Azure_Storage_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Storage_V-5.0.vssx) |
-| Workload | [`Azure_Workload_V-5.0.vssx`](https://github.com/xeeva/Visio-Azure/raw/main/stencils/V-5.0/Azure_Workload_V-5.0.vssx) |
+| Group | Metric | US |
+| --- | --- | --- |
+| AI | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_AI_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_AI_V-5_u.vssx) |
+| Application | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Application_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Application_V-5_u.vssx) |
+| Compute | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Compute_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Compute_V-5_u.vssx) |
+| Data | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Data_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Data_V-5_u.vssx) |
+| Deployment | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Deployment_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Deployment_V-5_u.vssx) |
+| Dynamics 365 | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Dynamics%20365_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Dynamics%20365_V-5_u.vssx) |
+| Endpoint | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Endpoint_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Endpoint_V-5_u.vssx) |
+| Generic | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Generic_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Generic_V-5_u.vssx) |
+| Identity | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Identity_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Identity_V-5_u.vssx) |
+| IoT | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_IoT_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_IoT_V-5_u.vssx) |
+| Management | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Management_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Management_V-5_u.vssx) |
+| Networking | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Networking_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Networking_V-5_u.vssx) |
+| Office365 | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Office365_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Office365_V-5_u.vssx) |
+| Security | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Security_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Security_V-5_u.vssx) |
+| Storage | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Storage_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Storage_V-5_u.vssx) |
+| Workload | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Workload_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Workload_V-5_u.vssx) |
+| Workload-Service | [Metric](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-Metric/Azure_Workload-Service_V-5_m.vssx) | [US](https://github.com/xeeva/Visio-Azure/raw/main/Stencil-US/Azure_Workload-Service_V-5_u.vssx) |
 
-See the [stencils/V-5.0](https://github.com/xeeva/Visio-Azure/tree/main/stencils/V-5.0) folder for the complete list of 18 per-group stencils, plus the drawing-resources companion.
+Browse the [`Stencil-Metric/`](https://github.com/xeeva/Visio-Azure/tree/main/Stencil-Metric) and [`Stencil-US/`](https://github.com/xeeva/Visio-Azure/tree/main/Stencil-US) folders for the full list of 17 group stencils plus the drawing-resources companion.
 
 ## 2. Install
 
