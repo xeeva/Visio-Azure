@@ -6,7 +6,7 @@ description: "The Visio-Azure drawing-resources stencil: dashed boxes, lines, ca
 
 # Drawing Resources
 
-`Azure_Drawing-Resources_V-5.0.vssx` ships alongside the icon set as a companion stencil with 93 hand-authored shapes for annotating diagrams: dashed boxes, lines of every flavour, callouts, bubbles, glow effects, and connector arrows.
+`Azure_Drawing-Resources_V-5.vssx` ships alongside the icon set as a companion stencil with 104 hand-authored shapes for annotating diagrams: dashed boxes, lines of every flavour, callouts, bubbles, glow effects, and connector arrows.
 
 ## Contents
 
