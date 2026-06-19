@@ -48,4 +48,5 @@ Allow: /
 User-agent: DuckAssistBot
 Allow: /
 
+Host: xeeva.github.io
 Sitemap: https://xeeva.github.io/Visio-Azure/sitemap.xml

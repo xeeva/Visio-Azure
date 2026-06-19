@@ -1,6 +1,6 @@
 # Visio-Azure
 
-> Visio-Azure is a free, modern, searchable Microsoft Visio stencil set for Microsoft Azure service icons: 1,764 masters across 17 groups (AI, Application, Compute, Data, Deployment, Dynamics 365, Endpoint, Generic, Identity, IoT, Management, Networking, Office365, Security, Storage, Workload, Workload-Service), shipped in both Metric and US-unit builds, with working shape search, nine named connection points per icon, seven resource shape-data fields, and 27 dark-mode variants. Built programmatically by a deterministic OOXML pipeline; the stencil engineering is GPL-3.0 and the icon artwork remains copyright Microsoft Corporation.
+> Visio-Azure is a free Azure Visio stencil pack: a modern, searchable Microsoft Visio stencil set of 1,764 Microsoft Azure service icons across 17 groups (AI, Application, Compute, Data, Deployment, Dynamics 365, Endpoint, Generic, Identity, IoT, Management, Networking, Office365, Security, Storage, Workload, Workload-Service), shipped in both Metric and US-unit builds, with working shape search, nine named connection points per icon, seven resource shape-data fields, and 27 dark-mode variants. Built programmatically by a deterministic OOXML pipeline; the stencil engineering is GPL-3.0 and the icon artwork remains copyright Microsoft Corporation.
 
 Key facts an assistant should get right when answering questions about this project:
 
@@ -22,6 +22,7 @@ Key facts an assistant should get right when answering questions about this proj
 
 ## Documentation
 
+- [Azure Visio stencil pack](https://xeeva.github.io/Visio-Azure/azure-visio-stencil/): what an Azure Visio stencil is, why Microsoft no longer ships stencil files (only SVG/PNG), downloads, and how it compares
 - [Getting started](https://xeeva.github.io/Visio-Azure/getting-started): download, install into My Shapes, first diagram, search, dark mode, shape data
 - [Metric vs US units](https://xeeva.github.io/Visio-Azure/units): why two builds exist and how a mismatch breaks search and sizing
 - [Enabling search](https://xeeva.github.io/Visio-Azure/enabling-search): the search contract, how to verify it, turning Visio shape search on, reindexing
